@@ -1,0 +1,640 @@
+src/upstreamproxy/upstreamproxy.ts:229:    const ffi = require('bun:ffi') as typeof import('bun:ffi')
+src/upstreamproxy/relay.ts:31:type WSCtor = typeof import('ws').default
+src/upstreamproxy/relay.ts:250:  nodeWSCtor = (await import('ws')).default
+src/ink/reconciler.ts:36:    void import('./devtools.js')
+src/main.tsx:70:const getTeammateUtils = () => require('./utils/teammate.js') as typeof import('./utils/teammate.js');
+src/main.tsx:71:const getTeammatePromptAddendum = () => require('./utils/swarm/teammatePromptAddendum.js') as typeof import('./utils/swarm/teammatePromptAddendum.js');
+src/main.tsx:72:const getTeammateModeSnapshot = () => require('./utils/swarm/backends/teammateModeSnapshot.js') as typeof import('./utils/swarm/backends/teammateModeSnapshot.js');
+src/main.tsx:76:const coordinatorModeModule = feature('COORDINATOR_MODE') ? require('./coordinator/coordinatorMode.js') as typeof import('./coordinator/coordinatorMode.js') : null;
+src/main.tsx:80:const assistantModule = feature('KAIROS') ? require('./assistant/index.js') as typeof import('./assistant/index.js') : null;
+src/main.tsx:81:const kairosGate = feature('KAIROS') ? require('./assistant/gate.js') as typeof import('./assistant/gate.js') : null;
+src/main.tsx:171:const autoModeStateModule = feature('TRANSCRIPT_CLASSIFIER') ? require('./utils/permissions/autoModeState.js') as typeof import('./utils/permissions/autoModeState.js') : null;
+src/main.tsx:429:    void import('./utils/eventLoopStallDetector.js').then(m => m.startEventLoopStallDetector());
+src/main.tsx:619:      } = await import('./server/parseConnectUrl.js');
+src/main.tsx:652:      } = await import('./utils/config.js');
+src/main.tsx:657:      } = await import('./utils/deepLink/protocolHandler.js');
+src/main.tsx:669:      } = await import('./utils/config.js');
+src/main.tsx:673:      } = await import('./utils/deepLink/protocolHandler.js');
+src/main.tsx:933:    } = await import('./utils/sinks.js');
+src/main.tsx:964:      void import('./services/settingsSync/index.js').then(m => m.uploadUserSettingsInBackground());
+src/main.tsx:1481:          } = await import('src/utils/computerUse/common.js');
+src/main.tsx:1612:        } = await import('src/utils/computerUse/gates.js');
+src/main.tsx:1616:          } = await import('src/utils/computerUse/setup.js');
+src/main.tsx:1733:      } = require('./tools/BriefTool/prompt.js') as typeof import('./tools/BriefTool/prompt.js');
+src/main.tsx:1736:      } = require('./tools/BriefTool/BriefTool.js') as typeof import('./tools/BriefTool/BriefTool.js');
+src/main.tsx:1875:      } = await import('./utils/toolPool.js');
+src/main.tsx:1909:    } = await import('./setup.js');
+src/main.tsx:2188:      } = require('./tools/BriefTool/BriefTool.js') as typeof import('./tools/BriefTool/BriefTool.js');
+src/main.tsx:2201:      const briefVisibility = feature('KAIROS') || feature('KAIROS_BRIEF') ? (require('./tools/BriefTool/BriefTool.js') as typeof import('./tools/BriefTool/BriefTool.js')).isBriefEnabled() ? 'Call SendUserMessage at checkpoints to mark where things stand.' : 'The user will see any text you output.' : 'The user will see any text you output.';
+src/main.tsx:2228:      } = await import('./ink.js');
+src/main.tsx:2249:        } = await import('./bridge/bridgeEnabled.js');
+src/main.tsx:2268:          } = await import('./components/agents/SnapshotUpdateDialog.js');
+src/main.tsx:2293:        void import('./bridge/trustedDevice.js').then(m => {
+src/main.tsx:2818:        void import('./utils/backgroundHousekeeping.js').then(m => m.startBackgroundHousekeeping());
+src/main.tsx:2820:          void import('./utils/sdkHeapDumpMonitor.js').then(m => m.startSdkMemoryMonitor());
+src/main.tsx:2827:      } = await import('src/cli/print.js');
+src/main.tsx:2922:      } = require('./bridge/bridgeEnabled.js') as typeof import('./bridge/bridgeEnabled.js');
+src/main.tsx:3064:    const sessionUploaderPromise = "external" === 'ant' ? import('./utils/sessionDataUploader.js') : null;
+src/main.tsx:3110:        } = await import('./commands/clear/caches.js');
+src/main.tsx:3203:      } = await import('./ssh/createSSHSession.js');
+src/main.tsx:3266:      } = await import('./assistant/sessionDiscovery.js');
+src/main.tsx:3314:      } = await import('./utils/auth.js');
+src/main.tsx:3361:      } = await import('./commands/clear/caches.js');
+src/main.tsx:3465:        } = await import('./utils/auth.js');
+src/main.tsx:3563:            } = await import('./components/TeleportProgress.js');
+src/main.tsx:3587:          } = await import('./utils/ccshareResume.js');
+src/main.tsx:3904:    } = await import('./cli/handlers/mcp.js');
+src/main.tsx:3921:    } = await import('./cli/handlers/mcp.js');
+src/main.tsx:3927:    } = await import('./cli/handlers/mcp.js');
+src/main.tsx:3933:    } = await import('./cli/handlers/mcp.js');
+src/main.tsx:3942:    } = await import('./cli/handlers/mcp.js');
+src/main.tsx:3950:    } = await import('./cli/handlers/mcp.js');
+src/main.tsx:3956:    } = await import('./cli/handlers/mcp.js');
+src/main.tsx:3973:      } = await import('crypto');
+src/main.tsx:3976:      } = await import('./server/server.js');
+src/main.tsx:3979:      } = await import('./server/sessionManager.js');
+src/main.tsx:3982:      } = await import('./server/backends/dangerousBackend.js');
+src/main.tsx:3985:      } = await import('./server/serverBanner.js');
+src/main.tsx:3988:      } = await import('./server/serverLog.js');
+src/main.tsx:3993:      } = await import('./server/lockfile.js');
+src/main.tsx:4065:      } = await import('./server/parseConnectUrl.js');
+src/main.tsx:4091:      } = await import('./server/connectHeadless.js');
+src/main.tsx:4114:    } = await import('./cli/handlers/auth.js');
+src/main.tsx:4128:    } = await import('./cli/handlers/auth.js');
+src/main.tsx:4134:    } = await import('./cli/handlers/auth.js');
+src/main.tsx:4154:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4166:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4179:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4188:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4196:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4204:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4215:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4227:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4238:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4250:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4261:    } = await import('./cli/handlers/plugins.js');
+src/main.tsx:4272:    }] = await Promise.all([import('./cli/handlers/util.js'), import('./ink.js')]);
+src/main.tsx:4281:    } = await import('./cli/handlers/agents.js');
+src/main.tsx:4293:        } = await import('./cli/handlers/autoMode.js');
+src/main.tsx:4300:        } = await import('./cli/handlers/autoMode.js');
+src/main.tsx:4307:        } = await import('./cli/handlers/autoMode.js');
+src/main.tsx:4330:      } = await import('./bridge/bridgeMain.js');
+src/main.tsx:4351:    }] = await Promise.all([import('./cli/handlers/util.js'), import('./ink.js')]);
+src/main.tsx:4365:    } = await import('src/cli/update.js');
+src/main.tsx:4374:      } = await import('src/cli/up.js');
+src/main.tsx:4389:      } = await import('src/cli/rollback.js');
+src/main.tsx:4400:    } = await import('./cli/handlers/util.js');
+src/main.tsx:4415:      } = await import('./cli/handlers/ant.js');
+src/main.tsx:4423:      } = await import('./cli/handlers/ant.js');
+src/main.tsx:4436:      } = await import('./cli/handlers/ant.js');
+src/main.tsx:4447:        } = await import('./cli/handlers/ant.js');
+src/main.tsx:4457:        } = await import('./cli/handlers/ant.js');
+src/main.tsx:4465:        } = await import('./cli/handlers/ant.js');
+src/main.tsx:4478:        } = await import('./cli/handlers/ant.js');
+src/main.tsx:4486:        } = await import('./cli/handlers/ant.js');
+src/main.tsx:4499:      } = await import('./cli/handlers/ant.js');
+src/main.tsx:4639:  } = require('./tools/BriefTool/BriefTool.js') as typeof import('./tools/BriefTool/BriefTool.js');
+src/commands.ts:88:      require('./commands/workflows/index.js') as typeof import('./commands/workflows/index.js')
+src/commands.ts:93:      require('./commands/remote-setup/index.js') as typeof import('./commands/remote-setup/index.js')
+src/commands.ts:98:      require('./services/skillSearch/localSearch.js') as typeof import('./services/skillSearch/localSearch.js')
+src/commands.ts:110:      require('./commands/peers/index.js') as typeof import('./commands/peers/index.js')
+src/commands.ts:115:      require('./commands/fork/index.js') as typeof import('./commands/fork/index.js')
+src/commands.ts:120:      require('./commands/buddy/index.js') as typeof import('./commands/buddy/index.js')
+src/commands.ts:198:    const real = (await import('./commands/insights.js')).default
+src/commands.ts:403:      require('./tools/WorkflowTool/createWorkflowCommand.js') as typeof import('./tools/WorkflowTool/createWorkflowCommand.js')
+src/tools/ExitPlanModeTool/ExitPlanModeV2Tool.ts:53:  ? (require('../../utils/permissions/autoModeState.js') as typeof import('../../utils/permissions/autoModeState.js'))
+src/tools/ExitPlanModeTool/ExitPlanModeV2Tool.ts:56:  ? (require('../../utils/permissions/permissionSetup.js') as typeof import('../../utils/permissions/permissionSetup.js'))
+src/tools/WebFetchTool/utils.ts:90:type TurndownCtor = typeof import('turndown')
+src/tools/WebFetchTool/utils.ts:93:  return (turndownServicePromise ??= import('turndown').then(m => {
+src/tools/shared/gitOperationTracking.ts:232:        void import('../../utils/sessionStorage.js').then(
+src/tools/shared/gitOperationTracking.ts:234:            void import('../../bootstrap/state.js').then(({ getSessionId }) => {
+src/tools/SendMessageTool/SendMessageTool.ts:759:            require('../../bridge/peerSessions.js') as typeof import('../../bridge/peerSessions.js')
+src/tools/SendMessageTool/SendMessageTool.ts:778:            require('../../utils/udsClient.js') as typeof import('../../utils/udsClient.js')
+src/tools/AgentTool/AgentTool.tsx:59:const proactiveModule = feature('PROACTIVE') || feature('KAIROS') ? require('../../proactive/index.js') as typeof import('../../proactive/index.js') : null;
+src/tools/AgentTool/builtInAgents.ts:39:        require('../../coordinator/workerAgent.js') as typeof import('../../coordinator/workerAgent.js')
+src/tools/AgentTool/runAgent.ts:618:    const { formatSkillLoadingMetadata } = await import(
+src/tools/AgentTool/runAgent.ts:851:        require('../../tasks/MonitorMcpTask/MonitorMcpTask.js') as typeof import('../../tasks/MonitorMcpTask/MonitorMcpTask.js')
+src/tools/ToolSearchTool/prompt.ts:12:        require('../BriefTool/prompt.js') as typeof import('../BriefTool/prompt.js')
+src/tools/ToolSearchTool/prompt.ts:17:      require('../SendUserFileTool/prompt.js') as typeof import('../SendUserFileTool/prompt.js')
+src/tools/ToolSearchTool/prompt.ts:77:    type ForkMod = typeof import('../AgentTool/forkSubagent.js')
+src/tools/PowerShellTool/pathValidation.ts:56:  decisionReason?: import('../../utils/permissions/PermissionResult.js').PermissionDecisionReason
+src/tools/SkillTool/SkillTool.ts:110:      ...(require('../../services/skillSearch/remoteSkillState.js') as typeof import('../../services/skillSearch/remoteSkillState.js')),
+src/tools/SkillTool/SkillTool.ts:111:      ...(require('../../services/skillSearch/remoteSkillLoader.js') as typeof import('../../services/skillSearch/remoteSkillLoader.js')),
+src/tools/SkillTool/SkillTool.ts:112:      ...(require('../../services/skillSearch/telemetry.js') as typeof import('../../services/skillSearch/telemetry.js')),
+src/tools/SkillTool/SkillTool.ts:113:      ...(require('../../services/skillSearch/featureCheck.js') as typeof import('../../services/skillSearch/featureCheck.js')),
+src/tools/SkillTool/SkillTool.ts:635:    const { processPromptSlashCommand } = await import(
+src/tools/ConfigTool/ConfigTool.ts:117:      const { isVoiceGrowthBookEnabled } = await import(
+src/tools/ConfigTool/ConfigTool.ts:237:      const { isVoiceModeEnabled } = await import(
+src/tools/ConfigTool/ConfigTool.ts:241:        const { isAnthropicAuthEnabled } = await import('../../utils/auth.js')
+src/tools/ConfigTool/ConfigTool.ts:251:      const { isVoiceStreamAvailable } = await import(
+src/tools/ConfigTool/ConfigTool.ts:258:      } = await import('../../services/voice.js')
+src/tools/ConfigTool/ConfigTool.ts:349:        const { settingsChangeDetector } = await import(
+src/tools/FileReadTool/FileReadTool.ts:1158:        const sharpModule = await import('sharp')
+src/tools/FileReadTool/imageProcessor.ts:46:      const imageProcessor = await import('image-processor-napi')
+src/tools/FileReadTool/imageProcessor.ts:61:  const imported = (await import(
+src/tools/FileReadTool/imageProcessor.ts:79:  const imported = (await import(
+src/tools/BriefTool/attachments.ts:96:    const { uploadBriefAttachment } = await import('./upload.js')
+src/bridge/trustedDevice.ts:123:      require('../utils/auth.js') as typeof import('../utils/auth.js')
+src/bridge/createSession.ts:55:  const { getClaudeAIOAuthTokens } = await import('../utils/auth.js')
+src/bridge/createSession.ts:56:  const { getOrganizationUUID } = await import('../services/oauth/client.js')
+src/bridge/createSession.ts:57:  const { getOauthConfig } = await import('../constants/oauth.js')
+src/bridge/createSession.ts:58:  const { getOAuthHeaders } = await import('../utils/teleport/api.js')
+src/bridge/createSession.ts:59:  const { parseGitHubRepository } = await import('../utils/detectRepository.js')
+src/bridge/createSession.ts:60:  const { getDefaultBranch } = await import('../utils/git.js')
+src/bridge/createSession.ts:61:  const { getMainLoopModel } = await import('../utils/model/model.js')
+src/bridge/createSession.ts:62:  const { default: axios } = await import('axios')
+src/bridge/createSession.ts:82:    const { parseGitRemote } = await import('../utils/detectRepository.js')
+src/bridge/createSession.ts:194:  const { getClaudeAIOAuthTokens } = await import('../utils/auth.js')
+src/bridge/createSession.ts:195:  const { getOrganizationUUID } = await import('../services/oauth/client.js')
+src/bridge/createSession.ts:196:  const { getOauthConfig } = await import('../constants/oauth.js')
+src/bridge/createSession.ts:197:  const { getOAuthHeaders } = await import('../utils/teleport/api.js')
+src/bridge/createSession.ts:198:  const { default: axios } = await import('axios')
+src/bridge/createSession.ts:271:  const { getClaudeAIOAuthTokens } = await import('../utils/auth.js')
+src/bridge/createSession.ts:272:  const { getOrganizationUUID } = await import('../services/oauth/client.js')
+src/bridge/createSession.ts:273:  const { getOauthConfig } = await import('../constants/oauth.js')
+src/bridge/createSession.ts:274:  const { getOAuthHeaders } = await import('../utils/teleport/api.js')
+src/bridge/createSession.ts:275:  const { default: axios } = await import('axios')
+src/bridge/createSession.ts:332:  const { getClaudeAIOAuthTokens } = await import('../utils/auth.js')
+src/bridge/createSession.ts:333:  const { getOrganizationUUID } = await import('../services/oauth/client.js')
+src/bridge/createSession.ts:334:  const { getOauthConfig } = await import('../constants/oauth.js')
+src/bridge/createSession.ts:335:  const { getOAuthHeaders } = await import('../utils/teleport/api.js')
+src/bridge/createSession.ts:336:  const { default: axios } = await import('axios')
+src/bridge/replBridge.ts:303:    await import('./bridgePointer.js')
+src/bridge/initReplBridge.ts:424:    const { initEnvLessBridgeCore } = await import('./remoteBridgeCore.js')
+src/bridge/initReplBridge.ts:480:      require('../assistant/index.js') as typeof import('../assistant/index.js')
+src/bridge/bridgeMain.ts:1046:                void import('./createSession.js')
+src/bridge/bridgeMain.ts:1576:  const { clearBridgePointer } = await import('./bridgePointer.js')
+src/bridge/bridgeMain.ts:1892:  const { EXTERNAL_PERMISSION_MODES } = await import('../types/permissions.js')
+src/bridge/bridgeMain.ts:1975:  const { getBridgeSession } = await import('./createSession.js')
+src/bridge/bridgeMain.ts:2024:    const { PERMISSION_MODES } = await import('../types/permissions.js')
+src/bridge/bridgeMain.ts:2040:  const { enableConfigs, checkHasTrustDialogAccepted } = await import(
+src/bridge/bridgeMain.ts:2047:  const { initSinks } = await import('../utils/sinks.js')
+src/bridge/bridgeMain.ts:2080:  const { setOriginalCwd, setCwdState } = await import('../bootstrap/state.js')
+src/bridge/bridgeMain.ts:2097:    await import('../utils/auth.js')
+src/bridge/bridgeMain.ts:2098:  const { getBridgeAccessToken, getBridgeBaseUrl } = await import(
+src/bridge/bridgeMain.ts:2116:  } = await import('../utils/config.js')
+src/bridge/bridgeMain.ts:2118:    const readline = await import('readline')
+src/bridge/bridgeMain.ts:2150:    const { readBridgePointerAcrossWorktrees } = await import(
+src/bridge/bridgeMain.ts:2206:  const { getBranch, getRemoteUrl, findGitRoot } = await import(
+src/bridge/bridgeMain.ts:2212:  const { hasWorktreeCreateHook } = await import('../utils/hooks.js')
+src/bridge/bridgeMain.ts:2248:    const readline = await import('readline')
+src/bridge/bridgeMain.ts:2324:    const { clearBridgePointer } = await import('./bridgePointer.js')
+src/bridge/bridgeMain.ts:2345:  const { handleOAuth401Error } = await import('../utils/auth.js')
+src/bridge/bridgeMain.ts:2379:    const { getBridgeSession } = await import('./createSession.js')
+src/bridge/bridgeMain.ts:2390:        const { clearBridgePointer } = await import('./bridgePointer.js')
+src/bridge/bridgeMain.ts:2402:        const { clearBridgePointer } = await import('./bridgePointer.js')
+src/bridge/bridgeMain.ts:2532:          const { clearBridgePointer } = await import('./bridgePointer.js')
+src/bridge/bridgeMain.ts:2594:  const { parseGitHubRepository } = await import('../utils/detectRepository.js')
+src/bridge/bridgeMain.ts:2675:    const { createBridgeSession } = await import('./createSession.js')
+src/bridge/bridgeMain.ts:2714:    const { writeBridgePointer } = await import('./bridgePointer.js')
+src/bridge/bridgeMain.ts:2820:  const { setOriginalCwd, setCwdState } = await import('../bootstrap/state.js')
+src/bridge/bridgeMain.ts:2824:  const { enableConfigs, checkHasTrustDialogAccepted } = await import(
+src/bridge/bridgeMain.ts:2828:  const { initSinks } = await import('../utils/sinks.js')
+src/bridge/bridgeMain.ts:2842:  const { getBridgeBaseUrl } = await import('./bridgeConfig.js')
+src/bridge/bridgeMain.ts:2859:  const { getBranch, getRemoteUrl, findGitRoot } = await import(
+src/bridge/bridgeMain.ts:2862:  const { hasWorktreeCreateHook } = await import('../utils/hooks.js')
+src/bridge/bridgeMain.ts:2931:    const { createBridgeSession } = await import('./createSession.js')
+src/dialogLaunchers.tsx:23:type ResumeConversationProps = React.ComponentProps<typeof import('./screens/ResumeConversation.js').ResumeConversation>;
+src/dialogLaunchers.tsx:36:  } = await import('./components/agents/SnapshotUpdateDialog.js');
+src/dialogLaunchers.tsx:50:  } = await import('./components/InvalidSettingsDialog.js');
+src/dialogLaunchers.tsx:63:  } = await import('./assistant/AssistantSessionChooser.js');
+src/dialogLaunchers.tsx:77:  } = await import('./commands/assistant/assistant.js');
+src/dialogLaunchers.tsx:94:  } = await import('./components/TeleportResumeWrapper.js');
+src/dialogLaunchers.tsx:108:  } = await import('./components/TeleportRepoMismatchDialog.js');
+src/dialogLaunchers.tsx:126:  }] = await Promise.all([worktreePathsPromise, import('./screens/ResumeConversation.js'), import('./components/App.js')]);
+src/constants/product.ts:71:    require('../bridge/sessionIdCompat.js') as typeof import('../bridge/sessionIdCompat.js')
+src/constants/prompts.ts:68:      require('../services/compact/cachedMCConfig.js') as typeof import('../services/compact/cachedMCConfig.js')
+src/constants/prompts.ts:79:        require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')
+src/constants/prompts.ts:84:    ? (require('../tools/BriefTool/BriefTool.js') as typeof import('../tools/BriefTool/BriefTool.js'))
+src/constants/prompts.ts:90:      require('../tools/DiscoverSkillsTool/prompt.js') as typeof import('../tools/DiscoverSkillsTool/prompt.js')
+src/constants/prompts.ts:96:  ? (require('../services/skillSearch/featureCheck.js') as typeof import('../services/skillSearch/featureCheck.js'))
+src/memdir/memdir.ts:8:  ? (require('./teamMemPaths.js') as typeof import('./teamMemPaths.js'))
+src/memdir/memdir.ts:107:  ? (require('./teamMemPrompts.js') as typeof import('./teamMemPrompts.js'))
+src/memdir/findRelevantMemories.ts:69:      require('./memoryShapeTelemetry.js') as typeof import('./memoryShapeTelemetry.js')
+src/replLauncher.tsx:15:  } = await import('./components/App.js');
+src/replLauncher.tsx:18:  } = await import('./screens/REPL.js');
+src/setup.ts:96:      const m = await import('./utils/udsMessaging.js')
+src/setup.ts:106:    const { captureTeammateModeSnapshot } = await import(
+src/setup.ts:298:        require('./services/contextCollapse/index.js') as typeof import('./services/contextCollapse/index.js')
+src/setup.ts:324:  void import('./utils/plugins/loadPluginHooks.js').then(m => {
+src/setup.ts:341:      void import('./utils/commitAttribution.js').then(async m => {
+src/setup.ts:343:          const { clearSystemPromptSections } = await import(
+src/setup.ts:355:        void import('./utils/attributionHooks.js').then(
+src/setup.ts:362:    void import('./utils/sessionFileAccessHooks.js').then(m =>
+src/setup.ts:366:      void import('./services/teamMemorySync/watcher.js').then(m =>
+src/buddy/types.ts:148:} as const satisfies Record<Rarity, keyof import('../utils/theme.js').Theme>
+src/utils/swarm/backends/registry.ts:76:  await import('./TmuxBackend.js')
+src/utils/swarm/backends/registry.ts:77:  await import('./ITermBackend.js')
+src/utils/swarm/teamHelpers.ts:613:      import('./backends/registry.js'),
+src/utils/swarm/teamHelpers.ts:614:      import('./backends/detection.js'),
+src/utils/swarm/teammateLayoutManager.ts:58:  const { isInsideTmux: checkTmux } = await import('./backends/detection.js')
+src/utils/processUserInput/processBashCommand.tsx:74:    type PSMod = typeof import('src/tools/PowerShellTool/PowerShellTool.js');
+src/utils/processUserInput/processUserInput.ts:480:    const { processSlashCommand } = await import('./processSlashCommand.js')
+src/utils/processUserInput/processUserInput.ts:518:    const { processBashCommand } = await import('./processBashCommand.js')
+src/utils/processUserInput/processUserInput.ts:538:    const { processSlashCommand } = await import('./processSlashCommand.js')
+src/utils/imagePaste.ts:108:      const { getNativeModule } = await import('image-processor-napi')
+src/utils/imagePaste.ts:137:      const { getNativeModule } = await import('image-processor-napi')
+src/utils/gracefulShutdown.ts:409:  const { executeSessionEndHooks, getSessionEndHookTimeoutMs } = await import(
+src/utils/plugins/zipCache.ts:223:  const { zipSync } = await import('fflate')
+src/utils/plugins/mcpbHandler.ts:420:  const { getMcpConfigForManifest } = await import('@anthropic-ai/mcpb')
+src/utils/worktree.ts:606:    void import('./postCommitAttribution.js')
+src/utils/worktree.ts:617:        // Dynamic import() itself rejected (module load failure). The inner
+src/utils/memoryFileDetection.ts:18:  ? (require('../memdir/teamMemPaths.js') as typeof import('../memdir/teamMemPaths.js'))
+src/utils/plans.ts:392:    const { recordTranscript } = await import('./sessionStorage.js')
+src/utils/messages.ts:166:function getTeammateMailbox(): typeof import('./teammateMailbox.js') {
+src/utils/messages.ts:2354:      require('../services/compact/snipCompact.js') as typeof import('../services/compact/snipCompact.js')
+src/utils/messages.ts:2424:      require('../services/compact/snipCompact.js') as typeof import('../services/compact/snipCompact.js')
+src/utils/messages.ts:4152:          require('../services/compact/snipCompact.js') as typeof import('../services/compact/snipCompact.js')
+src/utils/messages.ts:4651:      require('../services/compact/snipProjection.js') as typeof import('../services/compact/snipProjection.js')
+src/utils/analyzeContext.ts:386:  const { isToolSearchEnabled } = await import('./toolSearch.js')
+src/utils/analyzeContext.ts:387:  const { isDeferredTool } = await import('../tools/ToolSearchTool/prompt.js')
+src/utils/analyzeContext.ts:669:  const { isToolSearchEnabled } = await import('./toolSearch.js')
+src/utils/analyzeContext.ts:670:  const { isDeferredTool } = await import('../tools/ToolSearchTool/prompt.js')
+src/utils/analyzeContext.ts:1122:      require('../services/contextCollapse/index.js') as typeof import('../services/contextCollapse/index.js')
+src/utils/systemPrompt.ts:20:    ? (require('../proactive/index.js') as typeof import('../proactive/index.js'))
+src/utils/systemPrompt.ts:70:      require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js')
+src/utils/attribution.ts:384:    const { buildPRTrailers } = await import('./attributionTrailer.js')
+src/utils/ide.ts:34:  (): typeof import('src/components/IdeOnboardingDialog.js') =>
+src/utils/promptShellExecution.ts:40:        require('../tools/PowerShellTool/PowerShellTool.js') as typeof import('../tools/PowerShellTool/PowerShellTool.js')
+src/utils/caCerts.ts:48:  const tls = require('tls') as typeof import('tls')
+src/utils/yaml.ts:14:  return (require('yaml') as typeof import('yaml')).parse(input)
+src/utils/permissions/permissionSetup.ts:33:  ? (require('./autoModeState.js') as typeof import('./autoModeState.js'))
+src/utils/permissions/classifierDecision.ts:29:      require('../../tools/TerminalCaptureTool/prompt.js') as typeof import('../../tools/TerminalCaptureTool/prompt.js')
+src/utils/permissions/classifierDecision.ts:34:      require('../../tools/OverflowTestTool/OverflowTestTool.js') as typeof import('../../tools/OverflowTestTool/OverflowTestTool.js')
+src/utils/permissions/classifierDecision.ts:40:        require('../../tools/VerifyPlanExecutionTool/constants.js') as typeof import('../../tools/VerifyPlanExecutionTool/constants.js')
+src/utils/permissions/classifierDecision.ts:45:      require('../../tools/WorkflowTool/constants.js') as typeof import('../../tools/WorkflowTool/constants.js')
+src/utils/permissions/permissions.ts:60:  ? (require('./classifierDecision.js') as typeof import('./classifierDecision.js'))
+src/utils/permissions/permissions.ts:63:  ? (require('./autoModeState.js') as typeof import('./autoModeState.js'))
+src/utils/permissions/permissionRuleParser.ts:13:        require('../../tools/BriefTool/prompt.js') as typeof import('../../tools/BriefTool/prompt.js')
+src/utils/attachments.ts:98:        require('../services/skillSearch/featureCheck.js') as typeof import('../services/skillSearch/featureCheck.js'),
+src/utils/attachments.ts:100:        require('../services/skillSearch/prefetch.js') as typeof import('../services/skillSearch/prefetch.js'),
+src/utils/attachments.ts:104:  ? (require('./permissions/autoModeState.js') as typeof import('./permissions/autoModeState.js'))
+src/utils/attachments.ts:203:        require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')
+src/utils/attachments.ts:207:  ? (require('../services/sessionTranscript/sessionTranscript.js') as typeof import('../services/sessionTranscript/sessionTranscript.js'))
+src/utils/attachments.ts:3973:    require('../services/compact/snipCompact.js') as typeof import('../services/compact/snipCompact.js')
+src/utils/collapseReadSearch.ts:35:  ? (require('./teamMemoryOps.js') as typeof import('./teamMemoryOps.js'))
+src/utils/collapseReadSearch.ts:39:      require('../tools/SnipTool/prompt.js') as typeof import('../tools/SnipTool/prompt.js')
+src/utils/hash.ts:24:  const crypto = require('crypto') as typeof import('crypto')
+src/utils/hash.ts:39:  const crypto = require('crypto') as typeof import('crypto')
+src/utils/bash/registry.ts:38:    const module = await import(`@withfig/autocomplete/build/${command}.js`)
+src/utils/bash/ParsedCommand.ts:242:    const { parseCommand } = await import('./parser.js')
+src/utils/bash/ParsedCommand.ts:276:      const { parseCommand } = await import('./parser.js')
+src/utils/aws.ts:51:  const { STSClient, GetCallerIdentityCommand } = await import(
+src/utils/aws.ts:64:    const { fromIni } = await import('@aws-sdk/credential-providers')
+src/utils/cleanup.ts:466:    const cacache = await import('cacache')
+src/utils/dxt/helpers.ts:16:  const { McpbManifestSchema } = await import('@anthropic-ai/mcpb')
+src/utils/dxt/zip.ts:116:  const { unzipSync } = await import('fflate')
+src/utils/sessionStorage.ts:3161:  const { createReadStream } = await import('fs')
+src/utils/computerUse/mcpServer.ts:55: * an `await import()` in `client.ts` on first CU connection, not `main.tsx`.
+src/utils/computerUse/cleanup.ts:40:    const { unhideComputerUseApps } = await import('./executor.js')
+src/utils/sessionFileAccessHooks.ts:33:  ? (require('../memdir/teamMemPaths.js') as typeof import('../memdir/teamMemPaths.js'))
+src/utils/sessionFileAccessHooks.ts:36:  ? (require('../services/teamMemorySync/watcher.js') as typeof import('../services/teamMemorySync/watcher.js'))
+src/utils/sessionFileAccessHooks.ts:39:  ? (require('../memdir/memoryShapeTelemetry.js') as typeof import('../memdir/memoryShapeTelemetry.js'))
+src/utils/backgroundHousekeeping.ts:8:  ? (require('../services/extractMemories/extractMemories.js') as typeof import('../services/extractMemories/extractMemories.js'))
+src/utils/backgroundHousekeeping.ts:11:  ? (require('./deepLink/registerProtocol.js') as typeof import('./deepLink/registerProtocol.js'))
+src/utils/hooks/skillImprovement.ts:194:  const { join } = await import('path')
+src/utils/hooks/skillImprovement.ts:195:  const fs = await import('fs/promises')
+src/utils/hooks/execHttpHook.ts:24:  const { SandboxManager } = await import('../sandbox/sandbox-adapter.js')
+src/utils/toolPool.ts:23:  ? (require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js'))
+src/utils/model/bedrock.ts:12:    import('@aws-sdk/client-bedrock'),
+src/utils/model/bedrock.ts:51:  const { BedrockClient } = await import('@aws-sdk/client-bedrock')
+src/utils/model/bedrock.ts:68:        await import('@smithy/node-http-handler')
+src/utils/model/bedrock.ts:74:          signer: new (await import('@smithy/core')).NoAuthSigner(),
+src/utils/model/bedrock.ts:97:  const { BedrockRuntimeClient } = await import(
+src/utils/model/bedrock.ts:113:        await import('@smithy/node-http-handler')
+src/utils/model/bedrock.ts:119:          signer: new (await import('@smithy/core')).NoAuthSigner(),
+src/utils/model/bedrock.ts:147:      import('@aws-sdk/client-bedrock'),
+src/utils/proxy.ts:402:    import('@smithy/node-http-handler'),
+src/utils/proxy.ts:403:    import('@aws-sdk/credential-provider-node'),
+src/utils/telemetry/instrumentation.ts:169:          const { OTLPMetricExporter } = await import(
+src/utils/telemetry/instrumentation.ts:176:          const { OTLPMetricExporter } = await import(
+src/utils/telemetry/instrumentation.ts:183:          const { OTLPMetricExporter } = await import(
+src/utils/telemetry/instrumentation.ts:195:      const { PrometheusExporter } = await import(
+src/utils/telemetry/instrumentation.ts:238:          const { OTLPLogExporter } = await import(
+src/utils/telemetry/instrumentation.ts:245:          const { OTLPLogExporter } = await import(
+src/utils/telemetry/instrumentation.ts:252:          const { OTLPLogExporter } = await import(
+src/utils/telemetry/instrumentation.ts:289:          const { OTLPTraceExporter } = await import(
+src/utils/telemetry/instrumentation.ts:296:          const { OTLPTraceExporter } = await import(
+src/utils/telemetry/instrumentation.ts:303:          const { OTLPTraceExporter } = await import(
+src/utils/telemetry/instrumentation.ts:362:    import('@opentelemetry/exporter-trace-otlp-http'),
+src/utils/telemetry/instrumentation.ts:363:    import('@opentelemetry/exporter-logs-otlp-http'),
+src/utils/cronScheduler.ts:403:    const { default: chokidar } = await import('chokidar')
+src/utils/env.ts:30:    const { default: axiosClient } = await import('axios')
+src/utils/config.ts:37:  ? (require('../memdir/teamMemPaths.js') as typeof import('../memdir/teamMemPaths.js'))
+src/utils/config.ts:40:  ? (require('../bridge/bridgeEnabled.js') as typeof import('../bridge/bridgeEnabled.js'))
+src/utils/config.ts:270:  companion?: import('../buddy/types.js').StoredCompanion
+src/utils/config.ts:319:  // Inlined shape (not import()) because config.ts is in the SDK build surface
+src/utils/sessionRestore.ts:130:      require('../services/contextCollapse/persist.js') as typeof import('../services/contextCollapse/persist.js')
+src/utils/sessionRestore.ts:497:      require('../services/contextCollapse/persist.js') as typeof import('../services/contextCollapse/persist.js')
+src/utils/lockfile.ts:14:type Lockfile = typeof import('proper-lockfile')
+src/utils/semver.ts:9:let _npmSemver: typeof import('semver') | undefined
+src/utils/semver.ts:11:function getNpmSemver(): typeof import('semver') {
+src/utils/semver.ts:14:    _npmSemver = require('semver') as typeof import('semver')
+src/utils/git.ts:505:  const { parseGitRemote } = await import('./detectRepository.js')
+src/utils/cliHighlight.ts:3:// that only typecheck because this file's `typeof import('highlight.js')` pulls
+src/utils/cliHighlight.ts:11:  highlight: typeof import('cli-highlight').highlight
+src/utils/cliHighlight.ts:12:  supportsLanguage: typeof import('cli-highlight').supportsLanguage
+src/utils/cliHighlight.ts:17:// the module cache, so the second import() is a cache hit — no extra bytes
+src/utils/cliHighlight.ts:21:let loadedGetLanguage: typeof import('highlight.js').getLanguage | undefined
+src/utils/cliHighlight.ts:25:    const cliHighlight = await import('cli-highlight')
+src/utils/cliHighlight.ts:27:    const highlightJs = await import('highlight.js')
+src/utils/deepLink/protocolHandler.ts:95:    const { waitForUrlEvent } = await import('url-handler-napi')
+src/utils/auth.ts:850:    const { GoogleAuth } = await import('google-auth-library')
+src/utils/conversationRecovery.ts:58:        require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')
+src/utils/conversationRecovery.ts:64:        require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')
+src/utils/conversationRecovery.ts:69:      require('../tools/SendUserFileTool/prompt.js') as typeof import('../tools/SendUserFileTool/prompt.js')
+src/utils/conversationRecovery.ts:494:          const { listAllLiveSessions } = await import('./udsClient.js')
+src/utils/claudemd.ts:83:  ? (require('../memdir/teamMemPaths.js') as typeof import('../memdir/teamMemPaths.js'))
+src/utils/claudemd.ts:730:    let entries: import('fs').Dirent[]
+src/utils/envUtils.ts:142:      require('./protectedNamespace.js') as typeof import('./protectedNamespace.js')
+src/cli/transports/WebSocketTransport.ts:178:      const { default: WS } = await import('ws')
+src/cli/print.ts:359:  ? (require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js'))
+src/cli/print.ts:363:    ? (require('../proactive/index.js') as typeof import('../proactive/index.js'))
+src/cli/print.ts:366:  ? (require('../utils/cronScheduler.js') as typeof import('../utils/cronScheduler.js'))
+src/cli/print.ts:369:  ? (require('../utils/cronJitterConfig.js') as typeof import('../utils/cronJitterConfig.js'))
+src/cli/print.ts:372:  ? (require('../tools/ScheduleCronTool/prompt.js') as typeof import('../tools/ScheduleCronTool/prompt.js'))
+src/cli/print.ts:375:  ? (require('../services/extractMemories/extractMemories.js') as typeof import('../services/extractMemories/extractMemories.js'))
+src/cli/print.ts:1914:      const { setupPluginHookHotReload } = await import(
+src/cli/print.ts:2702:  let cronScheduler: import('../utils/cronScheduler.js').CronScheduler | null =
+src/cli/print.ts:3915:                const { initReplBridge } = await import(
+src/cli/print.ts:4928:              require('../tools/AgentTool/loadAgentsDir.js') as typeof import('../tools/AgentTool/loadAgentsDir.js')
+src/cli/print.ts:5008:      } = await import('src/utils/teleport.js')
+src/cli/print.ts:5130:            require('../tools/AgentTool/loadAgentsDir.js') as typeof import('../tools/AgentTool/loadAgentsDir.js')
+src/cli/handlers/mcp.tsx:62:    } = await import('../../setup.js');
+src/cli/handlers/mcp.tsx:66:    } = await import('../../entrypoints/mcp.js');
+src/cli/handlers/mcp.tsx:330:    } = await import('../../utils/claudeDesktop.js');
+src/cli/handlers/util.tsx:25:  } = await import('../../components/ConsoleOAuthFlow.js');
+src/cli/handlers/util.tsx:53:const DoctorLazy = React.lazy(() => import('../../screens/Doctor.js').then(m => ({
+src/cli/handlers/util.tsx:95:  } = await import('../../setup.js');
+src/cli/handlers/util.tsx:99:  } = await import('../../commands/install.js');
+src/cli/handlers/plugins.ts:166:  const { getPluginEditableScopes } = await import(
+src/QueryEngine.ts:88:  (): typeof import('src/components/MessageSelector.js') =>
+src/QueryEngine.ts:123:  ? (require('./services/compact/snipCompact.js') as typeof import('./services/compact/snipCompact.js'))
+src/QueryEngine.ts:126:  ? (require('./services/compact/snipProjection.js') as typeof import('./services/compact/snipProjection.js'))
+src/state/AppStateStore.ts:302:    vmContext: import('vm').Context
+src/state/AppStateStore.ts:461:    require('../utils/teammate.js') as typeof import('../utils/teammate.js')
+src/screens/ResumeConversation.tsx:197:        const coordinatorModule = require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js');
+src/screens/ResumeConversation.tsx:205:          } = require('../tools/AgentTool/loadAgentsDir.js') as typeof import('../tools/AgentTool/loadAgentsDir.js');
+src/screens/ResumeConversation.tsx:242:        } = require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js');
+src/screens/ResumeConversation.tsx:267:        (require('../services/contextCollapse/persist.js') as typeof import('../services/contextCollapse/persist.js')).restoreFromEntries(result_3.contextCollapseCommits ?? [], result_3.contextCollapseSnapshot);
+src/screens/REPL.tsx:98:const useVoiceIntegration: typeof import('../hooks/useVoiceIntegration.js').useVoiceIntegration = feature('VOICE_MODE') ? require('../hooks/useVoiceIntegration.js').useVoiceIntegration : () => ({
+src/screens/REPL.tsx:103:const VoiceKeybindingHandler: typeof import('../hooks/useVoiceIntegration.js').VoiceKeybindingHandler = feature('VOICE_MODE') ? require('../hooks/useVoiceIntegration.js').VoiceKeybindingHandler : () => null;
+src/screens/REPL.tsx:107:const useFrustrationDetection: typeof import('../components/FeedbackSurvey/useFrustrationDetection.js').useFrustrationDetection = "external" === 'ant' ? require('../components/FeedbackSurvey/useFrustrationDetection.js').useFrustrationDetection : () => ({
+src/screens/REPL.tsx:113:const useAntOrgWarningNotification: typeof import('../hooks/notifs/useAntOrgWarningNotification.js').useAntOrgWarningNotification = "external" === 'ant' ? require('../hooks/notifs/useAntOrgWarningNotification.js').useAntOrgWarningNotification : () => {};
+src/screens/REPL.tsx:272:const WebBrowserPanelModule = feature('WEB_BROWSER_TOOL') ? require('../tools/WebBrowserTool/WebBrowserPanel.js') as typeof import('../tools/WebBrowserTool/WebBrowserPanel.js') : null;
+src/screens/REPL.tsx:1020:        } = await import('../utils/commitAttribution.js');
+src/screens/REPL.tsx:1024:        } = await import('../utils/undercover.js');
+src/screens/REPL.tsx:1745:        const coordinatorModule = require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js');
+src/screens/REPL.tsx:1755:          } = require('../tools/AgentTool/loadAgentsDir.js') as typeof import('../tools/AgentTool/loadAgentsDir.js');
+src/screens/REPL.tsx:1850:      } = await import('../utils/asciicast.js');
+src/screens/REPL.tsx:1902:        } = require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js');
+src/screens/REPL.tsx:3043:        } = await import('../commands/clear/conversation.js');
+src/screens/REPL.tsx:3686:      (require('../services/contextCollapse/index.js') as typeof import('../services/contextCollapse/index.js')).resetContextCollapse();
+src/screens/REPL.tsx:4784:              } = await import('../commands/clear/conversation.js');
+src/components/Settings/Config.tsx:134:  const showDefaultViewPicker = feature('KAIROS') || feature('KAIROS_BRIEF') ? (require('../../tools/BriefTool/BriefTool.js') as typeof import('../../tools/BriefTool/BriefTool.js')).isBriefEntitled() : false;
+src/components/tasks/BackgroundTasksDialog.tsx:109:const WorkflowDetailDialog = feature('WORKFLOW_SCRIPTS') ? (require('./WorkflowDetailDialog.js') as typeof import('./WorkflowDetailDialog.js')).WorkflowDetailDialog : null;
+src/components/tasks/BackgroundTasksDialog.tsx:110:const workflowTaskModule = feature('WORKFLOW_SCRIPTS') ? require('src/tasks/LocalWorkflowTask/LocalWorkflowTask.js') as typeof import('src/tasks/LocalWorkflowTask/LocalWorkflowTask.js') : null;
+src/components/tasks/BackgroundTasksDialog.tsx:117:const monitorMcpModule = feature('MONITOR_TOOL') ? require('../../tasks/MonitorMcpTask/MonitorMcpTask.js') as typeof import('../../tasks/MonitorMcpTask/MonitorMcpTask.js') : null;
+src/components/tasks/BackgroundTasksDialog.tsx:119:const MonitorMcpDetailDialog = feature('MONITOR_TOOL') ? (require('./MonitorMcpDetailDialog.js') as typeof import('./MonitorMcpDetailDialog.js')).MonitorMcpDetailDialog : null;
+src/components/messages/SystemTextMessage.tsx:15:const teamMemSaved = feature('TEAMMEM') ? require('./teamMemSaved.js') as typeof import('./teamMemSaved.js') : null;
+src/components/messages/CollapsedReadSearchContent.tsx:23:const teamMemCollapsed = feature('TEAMMEM') ? require('./teamMemCollapsed.js') as typeof import('./teamMemCollapsed.js') : null;
+src/components/messages/UserTextMessage.tsx:104:      } = t1 as typeof import('./UserGitHubWebhookMessage.js');
+src/components/messages/UserTextMessage.tsx:201:      } = t1 as typeof import('./UserForkBoilerplateMessage.js');
+src/components/messages/UserTextMessage.tsx:225:      } = t1 as typeof import('./UserCrossSessionMessage.js');
+src/components/messages/UserTextMessage.tsx:249:      } = t1 as typeof import('./UserChannelMessage.js');
+src/components/memory/MemoryFileSelector.tsx:29:const teamMemPaths = feature('TEAMMEM') ? require('../../memdir/teamMemPaths.js') as typeof import('../../memdir/teamMemPaths.js') : null;
+src/components/WorktreeExitDialog.tsx:20:  (require('../utils/sessionStorage.js') as typeof import('../utils/sessionStorage.js')).saveWorktreeState(null);
+src/components/permissions/ExitPlanModePermissionRequest/ExitPlanModePermissionRequest.tsx:43:const autoModeStateModule = feature('TRANSCRIPT_CLASSIFIER') ? require('../../../utils/permissions/autoModeState.js') as typeof import('../../../utils/permissions/autoModeState.js') : null;
+src/components/permissions/PermissionRequest.tsx:36:const ReviewArtifactTool = feature('REVIEW_ARTIFACT') ? (require('../../tools/ReviewArtifactTool/ReviewArtifactTool.js') as typeof import('../../tools/ReviewArtifactTool/ReviewArtifactTool.js')).ReviewArtifactTool : null;
+src/components/permissions/PermissionRequest.tsx:37:const ReviewArtifactPermissionRequest = feature('REVIEW_ARTIFACT') ? (require('./ReviewArtifactPermissionRequest/ReviewArtifactPermissionRequest.js') as typeof import('./ReviewArtifactPermissionRequest/ReviewArtifactPermissionRequest.js')).ReviewArtifactPermissionRequest : null;
+src/components/permissions/PermissionRequest.tsx:38:const WorkflowTool = feature('WORKFLOW_SCRIPTS') ? (require('../../tools/WorkflowTool/WorkflowTool.js') as typeof import('../../tools/WorkflowTool/WorkflowTool.js')).WorkflowTool : null;
+src/components/permissions/PermissionRequest.tsx:39:const WorkflowPermissionRequest = feature('WORKFLOW_SCRIPTS') ? (require('../../tools/WorkflowTool/WorkflowPermissionRequest.js') as typeof import('../../tools/WorkflowTool/WorkflowPermissionRequest.js')).WorkflowPermissionRequest : null;
+src/components/permissions/PermissionRequest.tsx:40:const MonitorTool = feature('MONITOR_TOOL') ? (require('../../tools/MonitorTool/MonitorTool.js') as typeof import('../../tools/MonitorTool/MonitorTool.js')).MonitorTool : null;
+src/components/permissions/PermissionRequest.tsx:41:const MonitorPermissionRequest = feature('MONITOR_TOOL') ? (require('./MonitorPermissionRequest/MonitorPermissionRequest.js') as typeof import('./MonitorPermissionRequest/MonitorPermissionRequest.js')).MonitorPermissionRequest : null;
+src/components/ContextVisualization.tsx:32:        } = require("../services/contextCollapse/index.js") as typeof import('../services/contextCollapse/index.js');
+src/components/Message.tsx:252:          } = require("../services/compact/snipProjection.js") as typeof import('../services/compact/snipProjection.js');
+src/components/Message.tsx:255:          } = require("../services/compact/snipCompact.js") as typeof import('../services/compact/snipCompact.js');
+src/components/Message.tsx:266:            } = t2 as typeof import('./messages/SnipBoundaryMessage.js');
+src/components/Messages.tsx:81:const BRIEF_TOOL_NAME: string | null = feature('KAIROS') || feature('KAIROS_BRIEF') ? (require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')).BRIEF_TOOL_NAME : null;
+src/components/Messages.tsx:82:const SEND_USER_FILE_TOOL_NAME: string | null = feature('KAIROS') ? (require('../tools/SendUserFileTool/prompt.js') as typeof import('../tools/SendUserFileTool/prompt.js')).SEND_USER_FILE_TOOL_NAME : null;
+src/components/Messages.tsx:251:  scanElement?: (el: import('../ink/dom.js').DOMElement) => import('../ink/render-to-screen.js').MatchPosition[];
+src/components/Messages.tsx:255:    positions: import('../ink/render-to-screen.js').MatchPosition[];
+src/components/TokenWarning.tsx:36:  } = t1 as typeof import('../services/contextCollapse/index.js');
+src/components/TokenWarning.tsx:138:    } = require("../services/contextCollapse/index.js") as typeof import('../services/contextCollapse/index.js');
+src/components/PromptInput/PromptInputFooterLeftSide.tsx:6:const coordinatorModule = feature('COORDINATOR_MODE') ? require('../../coordinator/coordinatorMode.js') as typeof import('../../coordinator/coordinatorMode.js') : undefined;
+src/components/PromptInput/Notifications.tsx:37:const VoiceIndicator: typeof import('./VoiceIndicator.js').VoiceIndicator = feature('VOICE_MODE') ? require('./VoiceIndicator.js').VoiceIndicator : () => null;
+src/components/design-system/ThemeProvider.tsx:69:      void import('../../utils/systemThemeWatcher.js').then(({
+src/components/LogoV2/LogoV2.tsx:36:const ChannelsNoticeModule = feature('KAIROS') || feature('KAIROS_CHANNELS') ? require('./ChannelsNotice.js') as typeof import('./ChannelsNotice.js') : null;
+src/hooks/useVoiceIntegration.tsx:22:  useVoice: typeof import('./useVoice.js').useVoice;
+src/hooks/useVoice.ts:140:type VoiceModule = typeof import('../services/voice.js')
+src/hooks/useVoice.ts:532:      void import('../services/voice.js').then(mod => {
+src/hooks/useVoice.ts:613:        void import('../services/voice.js').then(mod => {
+src/hooks/useGlobalKeybindings.tsx:60:      require('../tasks/InProcessTeammateTask/InProcessTeammateTask.js') as typeof import('../tasks/InProcessTeammateTask/InProcessTeammateTask.js');
+src/hooks/useGlobalKeybindings.tsx:105:      } = require('../tools/BriefTool/BriefTool.js') as typeof import('../tools/BriefTool/BriefTool.js');
+src/hooks/useGlobalKeybindings.tsx:165:      } = require('../tools/BriefTool/BriefTool.js') as typeof import('../tools/BriefTool/BriefTool.js');
+src/hooks/useReplBridge.tsx:150:          } = await import('../bridge/initReplBridge.js');
+src/hooks/useReplBridge.tsx:153:          } = await import('../bridge/envLessBridgeConfig.js');
+src/hooks/useReplBridge.tsx:168:            } = await import('../assistant/index.js');
+src/hooks/useReplBridge.tsx:191:              } = await import('../bridge/inboundAttachments.js');
+src/hooks/useReplBridge.tsx:197:                } = require('../bridge/webhookSanitizer.js') as typeof import('../bridge/webhookSanitizer.js');
+src/tools.ts:65:    .TeamCreateTool as typeof import('./tools/TeamCreateTool/TeamCreateTool.js').TeamCreateTool
+src/tools.ts:68:    .TeamDeleteTool as typeof import('./tools/TeamDeleteTool/TeamDeleteTool.js').TeamDeleteTool
+src/tools.ts:71:    .SendMessageTool as typeof import('./tools/SendMessageTool/SendMessageTool.js').SendMessageTool
+src/tools.ts:121:  ? (require('./coordinator/coordinatorMode.js') as typeof import('./coordinator/coordinatorMode.js'))
+src/tools.ts:153:    require('./tools/PowerShellTool/PowerShellTool.js') as typeof import('./tools/PowerShellTool/PowerShellTool.js')
+src/entrypoints/init.ts:44:// initializeTelemetry is loaded lazily via import() in setMeterState() to defer
+src/entrypoints/init.ts:95:      import('../services/analytics/firstPartyEventLogger.js'),
+src/entrypoints/init.ts:96:      import('../services/analytics/growthbook.js'),
+src/entrypoints/init.ts:169:        const { initUpstreamProxy, getUpstreamProxyEnv } = await import(
+src/entrypoints/init.ts:172:        const { registerUpstreamProxyEnvFn } = await import(
+src/entrypoints/init.ts:196:      const { cleanupSessionTeams } = await import(
+src/entrypoints/init.ts:229:      return import('../components/InvalidConfigDialog.js').then(m =>
+src/entrypoints/init.ts:307:  const { initializeTelemetry } = await import(
+src/entrypoints/cli.tsx:47:  } = await import('../utils/startupProfiler.js');
+src/entrypoints/cli.tsx:57:    } = await import('../utils/config.js');
+src/entrypoints/cli.tsx:61:    } = await import('../utils/model/model.js');
+src/entrypoints/cli.tsx:66:    } = await import('../constants/prompts.js');
+src/entrypoints/cli.tsx:76:    } = await import('../utils/claudeInChrome/mcpServer.js');
+src/entrypoints/cli.tsx:83:    } = await import('../utils/claudeInChrome/chromeNativeHost.js');
+src/entrypoints/cli.tsx:90:    } = await import('../utils/computerUse/mcpServer.js');
+src/entrypoints/cli.tsx:103:    } = await import('../daemon/workerRegistry.js');
+src/entrypoints/cli.tsx:116:    } = await import('../utils/config.js');
+src/entrypoints/cli.tsx:121:    } = await import('../bridge/bridgeEnabled.js');
+src/entrypoints/cli.tsx:124:    } = await import('../bridge/types.js');
+src/entrypoints/cli.tsx:127:    } = await import('../bridge/bridgeMain.js');
+src/entrypoints/cli.tsx:130:    } = await import('../utils/process.js');
+src/entrypoints/cli.tsx:138:    } = await import('../utils/auth.js');
+src/entrypoints/cli.tsx:155:    } = await import('../services/policyLimits/index.js');
+src/entrypoints/cli.tsx:169:    } = await import('../utils/config.js');
+src/entrypoints/cli.tsx:173:    } = await import('../utils/sinks.js');
+src/entrypoints/cli.tsx:177:    } = await import('../daemon/main.js');
+src/entrypoints/cli.tsx:189:    } = await import('../utils/config.js');
+src/entrypoints/cli.tsx:191:    const bg = await import('../cli/bg.js');
+src/entrypoints/cli.tsx:216:    } = await import('../cli/handlers/templateJobs.js');
+src/entrypoints/cli.tsx:230:    } = await import('../environment-runner/main.js');
+src/entrypoints/cli.tsx:242:    } = await import('../self-hosted-runner/main.js');
+src/entrypoints/cli.tsx:253:    } = await import('../utils/config.js');
+src/entrypoints/cli.tsx:257:    } = await import('../utils/worktreeModeEnabled.js');
+src/entrypoints/cli.tsx:261:      } = await import('../utils/worktree.js');
+src/entrypoints/cli.tsx:270:        } = await import('../utils/process.js');
+src/entrypoints/cli.tsx:290:  } = await import('../utils/earlyInput.js');
+src/entrypoints/cli.tsx:295:  } = await import('../main.js');
+src/commands/remote-setup/index.ts:17:  load: () => import('./remote-setup.js'),
+src/commands/ide/index.ts:8:  load: () => import('./ide.js'),
+src/commands/vim/index.ts:8:  load: () => import('./vim.js'),
+src/commands/sandbox-toggle/index.ts:47:  load: () => import('./sandbox-toggle.js'),
+src/commands/btw/index.ts:10:  load: () => import('./btw.js'),
+src/commands/upgrade/index.ts:13:  load: () => import('./upgrade.js'),
+src/commands/install-github-app/index.ts:10:  load: () => import('./install-github-app.js'),
+src/commands/stickers/index.ts:8:  load: () => import('./stickers.js'),
+src/commands/tasks/index.ts:8:  load: () => import('./tasks.js'),
+src/commands/compact/compact.ts:36:  ? (require('../../services/compact/reactiveCompact.js') as typeof import('../../services/compact/reactiveCompact.js'))
+src/commands/compact/index.ts:12:  load: () => import('./compact.js'),
+src/commands/branch/index.ts:11:  load: () => import('./branch.js'),
+src/commands/context/context.tsx:24:    } = require('../../services/contextCollapse/operations.js') as typeof import('../../services/contextCollapse/operations.js');
+src/commands/context/index.ts:9:  load: () => import('./context.js'),
+src/commands/context/index.ts:23:  load: () => import('./context-noninteractive.js'),
+src/commands/context/context-noninteractive.ts:53:      require('../../services/contextCollapse/operations.js') as typeof import('../../services/contextCollapse/operations.js')
+src/commands/context/context-noninteractive.ts:116:      require('../../services/contextCollapse/index.js') as typeof import('../../services/contextCollapse/index.js')
+src/commands/memory/index.ts:7:  load: () => import('./memory.js'),
+src/commands/keybindings/index.ts:10:  load: () => import('./keybindings.js'),
+src/commands/add-dir/index.ts:8:  load: () => import('./add-dir.js'),
+src/commands/config/index.ts:8:  load: () => import('./config.js'),
+src/commands/plan/index.ts:8:  load: () => import('./plan.js'),
+src/commands/effort/index.ts:12:  load: () => import('./effort.js'),
+src/commands/bridge/bridge.tsx:472:  } = await import('../../services/policyLimits/index.js');
+src/commands/bridge/bridge.tsx:490:    } = await import('../../assistant/index.js');
+src/commands/bridge/index.ts:23:  load: () => import('./bridge.js'),
+src/commands/color/index.ts:13:  load: () => import('./color.js'),
+src/commands/resume/index.ts:9:  load: () => import('./resume.js'),
+src/commands/doctor/index.ts:9:  load: () => import('./doctor.js'),
+src/commands/cost/index.ts:20:  load: () => import('./cost.js'),
+src/commands/passes/index.ts:21:  load: () => import('./passes.js'),
+src/commands/plugin/index.tsx:8:  load: () => import('./plugin.js')
+src/commands/output-style/index.ts:8:  load: () => import('./output-style.js'),
+src/commands/fast/index.ts:23:  load: () => import('./fast.js'),
+src/commands/terminalSetup/index.ts:20:  load: () => import('./terminalSetup.js'),
+src/commands/agents/index.ts:7:  load: () => import('./agents.js'),
+src/commands/desktop/index.ts:23:  load: () => import('./desktop.js'),
+src/commands/diff/diff.tsx:6:  } = await import('../../components/diff/DiffDialog.js');
+src/commands/diff/index.ts:7:  load: () => import('./diff.js'),
+src/commands/logout/logout.tsx:22:  } = await import('../../utils/telemetry/instrumentation.js');
+src/commands/logout/index.ts:9:  load: () => import('./logout.js'),
+src/commands/usage/index.ts:8:  load: () => import('./usage.js'),
+src/commands/rewind/index.ts:10:  load: () => import('./rewind.js'),
+src/commands/mcp/index.ts:9:  load: () => import('./mcp.js'),
+src/commands/status/index.ts:9:  load: () => import('./status.js'),
+src/commands/remote-env/index.ts:14:  load: () => import('./remote-env.js'),
+src/commands/release-notes/index.ts:8:  load: () => import('./release-notes.js'),
+src/commands/permissions/index.ts:8:  load: () => import('./permissions.js'),
+src/commands/reload-plugins/index.ts:15:  load: () => import('./reload-plugins.js'),
+src/commands/feedback/index.ts:23:  load: () => import('./feedback.js'),
+src/commands/extra-usage/index.ts:18:  load: () => import('./extra-usage.js'),
+src/commands/extra-usage/index.ts:30:  load: () => import('./extra-usage-noninteractive.js'),
+src/commands/review.ts:53:  load: () => import('./review/ultrareviewCommand.js'),
+src/commands/clear/index.ts:16:  load: () => import('./clear.js'),
+src/commands/clear/caches.ts:96:    void import('../../tools/TungstenTool/TungstenTool.js').then(
+src/commands/clear/caches.ts:106:    void import('../../utils/attributionHooks.js').then(
+src/commands/clear/caches.ts:129:  void import('../../tools/WebFetchTool/utils.js').then(
+src/commands/clear/caches.ts:133:  void import('../../tools/ToolSearchTool/ToolSearchTool.js').then(
+src/commands/clear/caches.ts:137:  void import('../../tools/AgentTool/loadAgentsDir.js').then(
+src/commands/clear/caches.ts:141:  void import('../../tools/SkillTool/prompt.js').then(({ clearPromptCache }) =>
+src/commands/install-slack-app/index.ts:9:  load: () => import('./install-slack-app.js'),
+src/commands/voice/voice.ts:58:  const { isVoiceStreamAvailable } = await import(
+src/commands/voice/voice.ts:61:  const { checkRecordingAvailability } = await import('../../services/voice.js')
+src/commands/voice/voice.ts:83:  const { checkVoiceDependencies, requestMicrophonePermission } = await import(
+src/commands/voice/index.ts:17:  load: () => import('./voice.js'),
+src/commands/theme/index.ts:7:  load: () => import('./theme.js'),
+src/commands/mobile/index.ts:8:  load: () => import('./mobile.js'),
+src/commands/hooks/index.ts:8:  load: () => import('./hooks.js'),
+src/commands/chrome/index.ts:10:  load: () => import('./chrome.js'),
+src/commands/model/index.ts:15:  load: () => import('./model.js'),
+src/commands/rate-limit-options/index.ts:16:  load: () => import('./rate-limit-options.js'),
+src/commands/files/index.ts:9:  load: () => import('./files.js'),
+src/commands/exit/index.ts:9:  load: () => import('./exit.js'),
+src/commands/thinkback-play/index.ts:14:  load: () => import('./thinkback-play.js'),
+src/commands/copy/index.ts:12:  load: () => import('./copy.js'),
+src/commands/rename/rename.ts:66:    void import('../../bridge/createSession.js').then(
+src/commands/rename/index.ts:9:  load: () => import('./rename.js'),
+src/commands/skills/index.ts:7:  load: () => import('./skills.js'),
+src/commands/heapdump/index.ts:9:  load: () => import('./heapdump.js'),
+src/commands/thinkback/index.ts:10:  load: () => import('./thinkback.js'),
+src/commands/export/index.ts:8:  load: () => import('./export.js'),
+src/commands/privacy-settings/index.ts:11:  load: () => import('./privacy-settings.js'),
+src/commands/tag/index.ts:9:  load: () => import('./tag.js'),
+src/commands/login/index.ts:13:    load: () => import('./login.js'),
+src/commands/stats/index.ts:7:  load: () => import('./stats.js'),
+src/commands/help/index.ts:7:  load: () => import('./help.js'),
+src/commands/session/index.ts:13:  load: () => import('./session.js'),
+src/skills/mcpSkillBuilders.ts:13: * The non-literal dynamic-import approach ("await import(variable)") fails at
+src/skills/bundled/claudeApi.ts:7:type SkillContent = typeof import('./claudeApiContent.js')
+src/skills/bundled/claudeApi.ts:190:      const content = await import('./claudeApiContent.js')
+src/query.ts:16:  ? (require('./services/compact/reactiveCompact.js') as typeof import('./services/compact/reactiveCompact.js'))
+src/query.ts:19:  ? (require('./services/contextCollapse/index.js') as typeof import('./services/contextCollapse/index.js'))
+src/query.ts:67:  ? (require('./services/skillSearch/prefetch.js') as typeof import('./services/skillSearch/prefetch.js'))
+src/query.ts:70:  ? (require('./jobs/classifier.js') as typeof import('./jobs/classifier.js'))
+src/query.ts:116:  ? (require('./services/compact/snipCompact.js') as typeof import('./services/compact/snipCompact.js'))
+src/query.ts:119:  ? (require('./utils/taskSummary.js') as typeof import('./utils/taskSummary.js'))
+src/query.ts:1035:          const { cleanupComputerUseAfterTurn } = await import(
+src/query.ts:1491:          const { cleanupComputerUseAfterTurn } = await import(
+src/interactiveHelpers.tsx:72:  } = await import('./ink.js');
+src/interactiveHelpers.tsx:116:    } = await import('./components/Onboarding.js');
+src/interactiveHelpers.tsx:138:      } = await import('./components/TrustDialog/TrustDialog.js');
+src/interactiveHelpers.tsx:168:      } = await import('./components/ClaudeMdExternalIncludesDialog.js');
+src/interactiveHelpers.tsx:194:    } = await import('src/components/grove/Grove.js');
+src/interactiveHelpers.tsx:212:      } = await import('./components/ApproveApiKey.js');
+src/interactiveHelpers.tsx:221:    } = await import('./components/BypassPermissionsModeDialog.js');
+src/interactiveHelpers.tsx:232:      } = await import('./components/AutoModeOptInDialog.js');
+src/interactiveHelpers.tsx:258:      }] = await Promise.all([import('./services/mcp/channelAllowlist.js'), import('./utils/auth.js')]);
+src/interactiveHelpers.tsx:275:        } = await import('./components/DevChannelsDialog.js');
+src/interactiveHelpers.tsx:294:    } = await import('./components/ClaudeInChromeOnboarding.js');
+src/query/stopHooks.ts:43:  ? (require('../services/extractMemories/extractMemories.js') as typeof import('../services/extractMemories/extractMemories.js'))
+src/query/stopHooks.ts:46:  ? (require('../jobs/classifier.js') as typeof import('../jobs/classifier.js'))
+src/query/stopHooks.ts:166:      const { cleanupComputerUseAfterTurn } = await import(
+src/services/tokenEstimation.ts:477:    const { CountTokensCommand } = await import(
+src/services/compact/prompt.ts:8:    ? (require('../../proactive/index.js') as typeof import('../../proactive/index.js'))
+src/services/compact/postCompactCleanup.ts:46:        require('../contextCollapse/index.js') as typeof import('../contextCollapse/index.js')
+src/services/compact/postCompactCleanup.ts:72:    void import('../../utils/attributionHooks.js').then(m =>
+src/services/compact/autoCompact.ts:218:      require('../contextCollapse/index.js') as typeof import('../contextCollapse/index.js')
+src/services/compact/compact.ts:7:  ? (require('../sessionTranscript/sessionTranscript.js') as typeof import('../sessionTranscript/sessionTranscript.js'))
+src/services/compact/microCompact.ts:56:let cachedMCModule: typeof import('./cachedMicrocompact.js') | null = null
+src/services/compact/microCompact.ts:57:let cachedMCState: import('./cachedMicrocompact.js').CachedMCState | null = null
+src/services/compact/microCompact.ts:59:  | import('./cachedMicrocompact.js').CacheEditsBlock
+src/services/compact/microCompact.ts:63:  typeof import('./cachedMicrocompact.js')
+src/services/compact/microCompact.ts:66:    cachedMCModule = await import('./cachedMicrocompact.js')
+src/services/compact/microCompact.ts:71:function ensureCachedMCState(): import('./cachedMicrocompact.js').CachedMCState {
+src/services/compact/microCompact.ts:89:  | import('./cachedMicrocompact.js').CacheEditsBlock
+src/services/compact/microCompact.ts:100:export function getPinnedCacheEdits(): import('./cachedMicrocompact.js').PinnedCacheEdits[] {
+src/services/compact/microCompact.ts:113:  block: import('./cachedMicrocompact.js').CacheEditsBlock,
+src/services/extractMemories/extractMemories.ts:66:  ? (require('../../memdir/teamMemPaths.js') as typeof import('../../memdir/teamMemPaths.js'))
+src/services/mcp/useManageMCPConnections.ts:24:      require('../../skills/mcpSkills.js') as typeof import('../../skills/mcpSkills.js')
+src/services/mcp/useManageMCPConnections.ts:29:      require('../skillSearch/localSearch.js') as typeof import('../skillSearch/localSearch.js')
+src/services/mcp/client.ts:119:      require('../../skills/mcpSkills.js') as typeof import('../../skills/mcpSkills.js')
+src/services/mcp/client.ts:236:  (): typeof import('../../utils/claudeInChrome/toolRendering.js') =>
+src/services/mcp/client.ts:242:  ? (): typeof import('../../utils/computerUse/wrapper.js') =>
+src/services/mcp/client.ts:247:      require('../../utils/computerUse/common.js') as typeof import('../../utils/computerUse/common.js')
+src/services/mcp/client.ts:440:  const wsModule = await import('ws')
+src/services/mcp/client.ts:910:        const { createChromeContext } = await import(
+src/services/mcp/client.ts:913:        const { createClaudeForChromeMcpServer } = await import(
+src/services/mcp/client.ts:916:        const { createLinkedTransportPair } = await import(
+src/services/mcp/client.ts:933:        const { createComputerUseMcpServerForCli } = await import(
+src/services/mcp/client.ts:936:        const { createLinkedTransportPair } = await import(
+src/services/mcp/config.ts:642:    const { isComputerUseMCPServer } = await import(
+src/services/mcp/config.ts:1514:      require('../../utils/computerUse/common.js') as typeof import('../../utils/computerUse/common.js')
+src/services/voice.ts:20:type AudioNapi = typeof import('audio-capture-napi')
+src/services/voice.ts:27:    const mod = await import('audio-capture-napi')
+src/services/notifier.ts:138:    const plist = await import('plist')
+src/services/api/client.ts:154:    const { AnthropicBedrock } = await import('@anthropic-ai/bedrock-sdk')
+src/services/api/client.ts:192:    const { AnthropicFoundry } = await import('@anthropic-ai/foundry-sdk')
+src/services/api/client.ts:205:        } = await import('@azure/identity')
+src/services/api/client.ts:229:      import('@anthropic-ai/vertex-sdk'),
+src/services/api/client.ts:230:      import('google-auth-library'),
+src/services/api/claude.ts:106:  ? (require('../../utils/permissions/autoModeState.js') as typeof import('../../utils/permissions/autoModeState.js'))
+src/services/api/claude.ts:1195:    } = await import('../compact/cachedMicrocompact.js')
+src/services/api/claude.ts:1196:    const betas = await import('src/constants/betas.js')
+src/services/autoDream/autoDream.ts:283:  setAppState: import('../../Task.js').SetAppState,
+src/services/teamMemorySync/teamMemSecretGuard.ts:22:      require('../../memdir/teamMemPaths.js') as typeof import('../../memdir/teamMemPaths.js')
+src/services/teamMemorySync/teamMemSecretGuard.ts:24:      require('./secretScanner.js') as typeof import('./secretScanner.js')
+src/services/teamMemorySync/index.ts:853:    const { clearMemoryFileCaches } = await import('../../utils/claudemd.js')
+src/services/analytics/metadata.ts:133:          require('../../utils/computerUse/common.js') as typeof import('../../utils/computerUse/common.js')
+src/remote/SessionsWebSocket.ts:165:      const { default: WS } = await import('ws')

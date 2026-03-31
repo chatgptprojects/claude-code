@@ -1,0 +1,284 @@
+src/upstreamproxy/upstreamproxy.ts:229:    const ffi = require('bun:ffi') as typeof import('bun:ffi')
+src/main.tsx:70:const getTeammateUtils = () => require('./utils/teammate.js') as typeof import('./utils/teammate.js');
+src/main.tsx:71:const getTeammatePromptAddendum = () => require('./utils/swarm/teammatePromptAddendum.js') as typeof import('./utils/swarm/teammatePromptAddendum.js');
+src/main.tsx:72:const getTeammateModeSnapshot = () => require('./utils/swarm/backends/teammateModeSnapshot.js') as typeof import('./utils/swarm/backends/teammateModeSnapshot.js');
+src/main.tsx:76:const coordinatorModeModule = feature('COORDINATOR_MODE') ? require('./coordinator/coordinatorMode.js') as typeof import('./coordinator/coordinatorMode.js') : null;
+src/main.tsx:80:const assistantModule = feature('KAIROS') ? require('./assistant/index.js') as typeof import('./assistant/index.js') : null;
+src/main.tsx:81:const kairosGate = feature('KAIROS') ? require('./assistant/gate.js') as typeof import('./assistant/gate.js') : null;
+src/main.tsx:171:const autoModeStateModule = feature('TRANSCRIPT_CLASSIFIER') ? require('./utils/permissions/autoModeState.js') as typeof import('./utils/permissions/autoModeState.js') : null;
+src/main.tsx:256:    const inspector = (global as any).require('inspector');
+src/main.tsx:1733:      } = require('./tools/BriefTool/prompt.js') as typeof import('./tools/BriefTool/prompt.js');
+src/main.tsx:1736:      } = require('./tools/BriefTool/BriefTool.js') as typeof import('./tools/BriefTool/BriefTool.js');
+src/main.tsx:2188:      } = require('./tools/BriefTool/BriefTool.js') as typeof import('./tools/BriefTool/BriefTool.js');
+src/main.tsx:2201:      const briefVisibility = feature('KAIROS') || feature('KAIROS_BRIEF') ? (require('./tools/BriefTool/BriefTool.js') as typeof import('./tools/BriefTool/BriefTool.js')).isBriefEnabled() ? 'Call SendUserMessage at checkpoints to mark where things stand.' : 'The user will see any text you output.' : 'The user will see any text you output.';
+src/main.tsx:2922:      } = require('./bridge/bridgeEnabled.js') as typeof import('./bridge/bridgeEnabled.js');
+src/main.tsx:4616:    const proactiveModule = require('./proactive/index.js');
+src/main.tsx:4639:  } = require('./tools/BriefTool/BriefTool.js') as typeof import('./tools/BriefTool/BriefTool.js');
+src/commands.ts:50:    ? require('./commands/agents-platform/index.js').default
+src/commands.ts:64:    ? require('./commands/proactive.js').default
+src/commands.ts:68:    ? require('./commands/brief.js').default
+src/commands.ts:71:  ? require('./commands/assistant/index.js').default
+src/commands.ts:74:  ? require('./commands/bridge/index.js').default
+src/commands.ts:78:    ? require('./commands/remoteControlServer/index.js').default
+src/commands.ts:81:  ? require('./commands/voice/index.js').default
+src/commands.ts:84:  ? require('./commands/force-snip.js').default
+src/commands.ts:88:      require('./commands/workflows/index.js') as typeof import('./commands/workflows/index.js')
+src/commands.ts:93:      require('./commands/remote-setup/index.js') as typeof import('./commands/remote-setup/index.js')
+src/commands.ts:98:      require('./services/skillSearch/localSearch.js') as typeof import('./services/skillSearch/localSearch.js')
+src/commands.ts:102:  ? require('./commands/subscribe-pr.js').default
+src/commands.ts:105:  ? require('./commands/ultraplan.js').default
+src/commands.ts:107:const torch = feature('TORCH') ? require('./commands/torch.js').default : null
+src/commands.ts:110:      require('./commands/peers/index.js') as typeof import('./commands/peers/index.js')
+src/commands.ts:115:      require('./commands/fork/index.js') as typeof import('./commands/fork/index.js')
+src/commands.ts:120:      require('./commands/buddy/index.js') as typeof import('./commands/buddy/index.js')
+src/commands.ts:403:      require('./tools/WorkflowTool/createWorkflowCommand.js') as typeof import('./tools/WorkflowTool/createWorkflowCommand.js')
+src/tools/ExitPlanModeTool/ExitPlanModeV2Tool.ts:53:  ? (require('../../utils/permissions/autoModeState.js') as typeof import('../../utils/permissions/autoModeState.js'))
+src/tools/ExitPlanModeTool/ExitPlanModeV2Tool.ts:56:  ? (require('../../utils/permissions/permissionSetup.js') as typeof import('../../utils/permissions/permissionSetup.js'))
+src/tools/SendMessageTool/SendMessageTool.ts:759:            require('../../bridge/peerSessions.js') as typeof import('../../bridge/peerSessions.js')
+src/tools/SendMessageTool/SendMessageTool.ts:778:            require('../../utils/udsClient.js') as typeof import('../../utils/udsClient.js')
+src/tools/AgentTool/AgentTool.tsx:59:const proactiveModule = feature('PROACTIVE') || feature('KAIROS') ? require('../../proactive/index.js') as typeof import('../../proactive/index.js') : null;
+src/tools/AgentTool/builtInAgents.ts:39:        require('../../coordinator/workerAgent.js') as typeof import('../../coordinator/workerAgent.js')
+src/tools/AgentTool/runAgent.ts:851:        require('../../tasks/MonitorMcpTask/MonitorMcpTask.js') as typeof import('../../tasks/MonitorMcpTask/MonitorMcpTask.js')
+src/tools/ToolSearchTool/prompt.ts:12:        require('../BriefTool/prompt.js') as typeof import('../BriefTool/prompt.js')
+src/tools/ToolSearchTool/prompt.ts:17:      require('../SendUserFileTool/prompt.js') as typeof import('../SendUserFileTool/prompt.js')
+src/tools/ToolSearchTool/prompt.ts:79:    const m = require('../AgentTool/forkSubagent.js') as ForkMod
+src/tools/SkillTool/SkillTool.ts:110:      ...(require('../../services/skillSearch/remoteSkillState.js') as typeof import('../../services/skillSearch/remoteSkillState.js')),
+src/tools/SkillTool/SkillTool.ts:111:      ...(require('../../services/skillSearch/remoteSkillLoader.js') as typeof import('../../services/skillSearch/remoteSkillLoader.js')),
+src/tools/SkillTool/SkillTool.ts:112:      ...(require('../../services/skillSearch/telemetry.js') as typeof import('../../services/skillSearch/telemetry.js')),
+src/tools/SkillTool/SkillTool.ts:113:      ...(require('../../services/skillSearch/featureCheck.js') as typeof import('../../services/skillSearch/featureCheck.js')),
+src/bridge/trustedDevice.ts:123:      require('../utils/auth.js') as typeof import('../utils/auth.js')
+src/bridge/initReplBridge.ts:480:      require('../assistant/index.js') as typeof import('../assistant/index.js')
+src/bridge/bridgeEnabled.ts:9:// call it, auth.js is fully loaded. Previously used require() for the same
+src/bridge/bridgeEnabled.ts:10:// deferral, but require() hits a CJS cache that diverges from the ESM
+src/constants/product.ts:71:    require('../bridge/sessionIdCompat.js') as typeof import('../bridge/sessionIdCompat.js')
+src/constants/prompts.ts:68:      require('../services/compact/cachedMCConfig.js') as typeof import('../services/compact/cachedMCConfig.js')
+src/constants/prompts.ts:74:    ? require('../proactive/index.js')
+src/constants/prompts.ts:79:        require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')
+src/constants/prompts.ts:84:    ? (require('../tools/BriefTool/BriefTool.js') as typeof import('../tools/BriefTool/BriefTool.js'))
+src/constants/prompts.ts:90:      require('../tools/DiscoverSkillsTool/prompt.js') as typeof import('../tools/DiscoverSkillsTool/prompt.js')
+src/constants/prompts.ts:96:  ? (require('../services/skillSearch/featureCheck.js') as typeof import('../services/skillSearch/featureCheck.js'))
+src/memdir/memdir.ts:8:  ? (require('./teamMemPaths.js') as typeof import('./teamMemPaths.js'))
+src/memdir/memdir.ts:107:  ? (require('./teamMemPrompts.js') as typeof import('./teamMemPrompts.js'))
+src/memdir/findRelevantMemories.ts:69:      require('./memoryShapeTelemetry.js') as typeof import('./memoryShapeTelemetry.js')
+src/setup.ts:298:        require('./services/contextCollapse/index.js') as typeof import('./services/contextCollapse/index.js')
+src/utils/processUserInput/processBashCommand.tsx:78:      PowerShellTool = (require('src/tools/PowerShellTool/PowerShellTool.js') as PSMod).PowerShellTool;
+src/utils/messages/systemInit.ts:91:      require('../udsMessaging.js').getUdsMessagingSocketPath()
+src/utils/modifiers.ts:17:    const { prewarm } = require('modifiers-napi') as { prewarm: () => void }
+src/utils/modifiers.ts:34:    require('modifiers-napi') as { isModifierPressed: (m: string) => boolean }
+src/utils/mtls.ts:140:  const undiciMod = require('undici') as typeof undici
+src/utils/memoryFileDetection.ts:18:  ? (require('../memdir/teamMemPaths.js') as typeof import('../memdir/teamMemPaths.js'))
+src/utils/messages.ts:168:  return require('./teammateMailbox.js')
+src/utils/messages.ts:2354:      require('../services/compact/snipCompact.js') as typeof import('../services/compact/snipCompact.js')
+src/utils/messages.ts:2424:      require('../services/compact/snipCompact.js') as typeof import('../services/compact/snipCompact.js')
+src/utils/messages.ts:4152:          require('../services/compact/snipCompact.js') as typeof import('../services/compact/snipCompact.js')
+src/utils/messages.ts:4651:      require('../services/compact/snipProjection.js') as typeof import('../services/compact/snipProjection.js')
+src/utils/analyzeContext.ts:1122:      require('../services/contextCollapse/index.js') as typeof import('../services/contextCollapse/index.js')
+src/utils/systemPrompt.ts:20:    ? (require('../proactive/index.js') as typeof import('../proactive/index.js'))
+src/utils/systemPrompt.ts:70:      require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js')
+src/utils/ide.ts:35:    require('src/components/IdeOnboardingDialog.js')
+src/utils/promptShellExecution.ts:40:        require('../tools/PowerShellTool/PowerShellTool.js') as typeof import('../tools/PowerShellTool/PowerShellTool.js')
+src/utils/caCerts.ts:48:  const tls = require('tls') as typeof import('tls')
+src/utils/yaml.ts:14:  return (require('yaml') as typeof import('yaml')).parse(input)
+src/utils/permissions/permissionSetup.ts:33:  ? (require('./autoModeState.js') as typeof import('./autoModeState.js'))
+src/utils/permissions/yoloClassifier.ts:48:// time, require() returns {default: string} — txtRequire normalizes both.
+src/utils/permissions/yoloClassifier.ts:55:  ? txtRequire(require('./yolo-classifier-prompts/auto_mode_system_prompt.txt'))
+src/utils/permissions/yoloClassifier.ts:62:  ? txtRequire(require('./yolo-classifier-prompts/permissions_external.txt'))
+src/utils/permissions/yoloClassifier.ts:67:    ? txtRequire(require('./yolo-classifier-prompts/permissions_anthropic.txt'))
+src/utils/permissions/classifierDecision.ts:29:      require('../../tools/TerminalCaptureTool/prompt.js') as typeof import('../../tools/TerminalCaptureTool/prompt.js')
+src/utils/permissions/classifierDecision.ts:34:      require('../../tools/OverflowTestTool/OverflowTestTool.js') as typeof import('../../tools/OverflowTestTool/OverflowTestTool.js')
+src/utils/permissions/classifierDecision.ts:40:        require('../../tools/VerifyPlanExecutionTool/constants.js') as typeof import('../../tools/VerifyPlanExecutionTool/constants.js')
+src/utils/permissions/classifierDecision.ts:45:      require('../../tools/WorkflowTool/constants.js') as typeof import('../../tools/WorkflowTool/constants.js')
+src/utils/permissions/autoModeState.ts:2:// conditionally require() it on feature('TRANSCRIPT_CLASSIFIER').
+src/utils/permissions/permissions.ts:60:  ? (require('./classifierDecision.js') as typeof import('./classifierDecision.js'))
+src/utils/permissions/permissions.ts:63:  ? (require('./autoModeState.js') as typeof import('./autoModeState.js'))
+src/utils/permissions/permissionRuleParser.ts:13:        require('../../tools/BriefTool/prompt.js') as typeof import('../../tools/BriefTool/prompt.js')
+src/utils/attachments.ts:98:        require('../services/skillSearch/featureCheck.js') as typeof import('../services/skillSearch/featureCheck.js'),
+src/utils/attachments.ts:100:        require('../services/skillSearch/prefetch.js') as typeof import('../services/skillSearch/prefetch.js'),
+src/utils/attachments.ts:104:  ? (require('./permissions/autoModeState.js') as typeof import('./permissions/autoModeState.js'))
+src/utils/attachments.ts:203:        require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')
+src/utils/attachments.ts:207:  ? (require('../services/sessionTranscript/sessionTranscript.js') as typeof import('../services/sessionTranscript/sessionTranscript.js'))
+src/utils/attachments.ts:3973:    require('../services/compact/snipCompact.js') as typeof import('../services/compact/snipCompact.js')
+src/utils/collapseReadSearch.ts:35:  ? (require('./teamMemoryOps.js') as typeof import('./teamMemoryOps.js'))
+src/utils/collapseReadSearch.ts:39:      require('../tools/SnipTool/prompt.js') as typeof import('../tools/SnipTool/prompt.js')
+src/utils/hash.ts:24:  const crypto = require('crypto') as typeof import('crypto')
+src/utils/hash.ts:39:  const crypto = require('crypto') as typeof import('crypto')
+src/utils/computerUse/inputLoader.ts:25:  const input = require('@ant/computer-use-input') as ComputerUseInput
+src/utils/computerUse/swiftLoader.ts:20:  return (cached ??= require('@ant/computer-use-swift') as ComputerUseAPI)
+src/utils/sessionFileAccessHooks.ts:33:  ? (require('../memdir/teamMemPaths.js') as typeof import('../memdir/teamMemPaths.js'))
+src/utils/sessionFileAccessHooks.ts:36:  ? (require('../services/teamMemorySync/watcher.js') as typeof import('../services/teamMemorySync/watcher.js'))
+src/utils/sessionFileAccessHooks.ts:39:  ? (require('../memdir/memoryShapeTelemetry.js') as typeof import('../memdir/memoryShapeTelemetry.js'))
+src/utils/backgroundHousekeeping.ts:8:  ? (require('../services/extractMemories/extractMemories.js') as typeof import('../services/extractMemories/extractMemories.js'))
+src/utils/backgroundHousekeeping.ts:11:  ? (require('./deepLink/registerProtocol.js') as typeof import('./deepLink/registerProtocol.js'))
+src/utils/toolPool.ts:23:  ? (require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js'))
+src/utils/proxy.ts:200:  const undiciMod = require('undici') as typeof undici
+src/utils/proxy.ts:372:    ;(require('undici') as typeof undici).setGlobalDispatcher(
+src/utils/proxy.ts:383:      ;(require('undici') as typeof undici).setGlobalDispatcher(
+src/utils/profilerBase.ts:17:    performance = require('perf_hooks').performance
+src/utils/config.ts:37:  ? (require('../memdir/teamMemPaths.js') as typeof import('../memdir/teamMemPaths.js'))
+src/utils/config.ts:40:  ? (require('../bridge/bridgeEnabled.js') as typeof import('../bridge/bridgeEnabled.js'))
+src/utils/sessionRestore.ts:130:      require('../services/contextCollapse/persist.js') as typeof import('../services/contextCollapse/persist.js')
+src/utils/sessionRestore.ts:497:      require('../services/contextCollapse/persist.js') as typeof import('../services/contextCollapse/persist.js')
+src/utils/lockfile.ts:21:    _lockfile = require('proper-lockfile') as Lockfile
+src/utils/semver.ts:14:    _npmSemver = require('semver') as typeof import('semver')
+src/utils/conversationRecovery.ts:58:        require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')
+src/utils/conversationRecovery.ts:64:        require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')
+src/utils/conversationRecovery.ts:69:      require('../tools/SendUserFileTool/prompt.js') as typeof import('../tools/SendUserFileTool/prompt.js')
+src/utils/claudemd.ts:83:  ? (require('../memdir/teamMemPaths.js') as typeof import('../memdir/teamMemPaths.js'))
+src/utils/envUtils.ts:138:  // DCE'd so the require() and namespace allowlist never appear in the bundle.
+src/utils/envUtils.ts:142:      require('./protectedNamespace.js') as typeof import('./protectedNamespace.js')
+src/cli/print.ts:359:  ? (require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js'))
+src/cli/print.ts:363:    ? (require('../proactive/index.js') as typeof import('../proactive/index.js'))
+src/cli/print.ts:366:  ? (require('../utils/cronScheduler.js') as typeof import('../utils/cronScheduler.js'))
+src/cli/print.ts:369:  ? (require('../utils/cronJitterConfig.js') as typeof import('../utils/cronJitterConfig.js'))
+src/cli/print.ts:372:  ? (require('../tools/ScheduleCronTool/prompt.js') as typeof import('../tools/ScheduleCronTool/prompt.js'))
+src/cli/print.ts:375:  ? (require('../services/extractMemories/extractMemories.js') as typeof import('../services/extractMemories/extractMemories.js'))
+src/cli/print.ts:2687:    const { setOnEnqueue } = require('../utils/udsMessaging.js')
+src/cli/print.ts:4928:              require('../tools/AgentTool/loadAgentsDir.js') as typeof import('../tools/AgentTool/loadAgentsDir.js')
+src/cli/print.ts:5130:            require('../tools/AgentTool/loadAgentsDir.js') as typeof import('../tools/AgentTool/loadAgentsDir.js')
+src/QueryEngine.ts:89:    require('src/components/MessageSelector.js')
+src/QueryEngine.ts:116:  ? require('./coordinator/coordinatorMode.js').getCoordinatorUserContext
+src/QueryEngine.ts:123:  ? (require('./services/compact/snipCompact.js') as typeof import('./services/compact/snipCompact.js'))
+src/QueryEngine.ts:126:  ? (require('./services/compact/snipProjection.js') as typeof import('./services/compact/snipProjection.js'))
+src/state/AppStateStore.ts:461:    require('../utils/teammate.js') as typeof import('../utils/teammate.js')
+src/state/AppState.tsx:16:}) => React.ReactNode = feature('VOICE_MODE') ? require('../context/voice.js').VoiceProvider : ({
+src/screens/ResumeConversation.tsx:197:        const coordinatorModule = require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js');
+src/screens/ResumeConversation.tsx:205:          } = require('../tools/AgentTool/loadAgentsDir.js') as typeof import('../tools/AgentTool/loadAgentsDir.js');
+src/screens/ResumeConversation.tsx:239:        } = require('../utils/sessionStorage.js');
+src/screens/ResumeConversation.tsx:242:        } = require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js');
+src/screens/ResumeConversation.tsx:267:        (require('../services/contextCollapse/persist.js') as typeof import('../services/contextCollapse/persist.js')).restoreFromEntries(result_3.contextCollapseCommits ?? [], result_3.contextCollapseSnapshot);
+src/screens/REPL.tsx:98:const useVoiceIntegration: typeof import('../hooks/useVoiceIntegration.js').useVoiceIntegration = feature('VOICE_MODE') ? require('../hooks/useVoiceIntegration.js').useVoiceIntegration : () => ({
+src/screens/REPL.tsx:103:const VoiceKeybindingHandler: typeof import('../hooks/useVoiceIntegration.js').VoiceKeybindingHandler = feature('VOICE_MODE') ? require('../hooks/useVoiceIntegration.js').VoiceKeybindingHandler : () => null;
+src/screens/REPL.tsx:107:const useFrustrationDetection: typeof import('../components/FeedbackSurvey/useFrustrationDetection.js').useFrustrationDetection = "external" === 'ant' ? require('../components/FeedbackSurvey/useFrustrationDetection.js').useFrustrationDetection : () => ({
+src/screens/REPL.tsx:113:const useAntOrgWarningNotification: typeof import('../hooks/notifs/useAntOrgWarningNotification.js').useAntOrgWarningNotification = "external" === 'ant' ? require('../hooks/notifs/useAntOrgWarningNotification.js').useAntOrgWarningNotification : () => {};
+src/screens/REPL.tsx:119:} = feature('COORDINATOR_MODE') ? require('../coordinator/coordinatorMode.js').getCoordinatorUserContext : () => ({});
+src/screens/REPL.tsx:194:const proactiveModule = feature('PROACTIVE') || feature('KAIROS') ? require('../proactive/index.js') : null;
+src/screens/REPL.tsx:198:const useProactive = feature('PROACTIVE') || feature('KAIROS') ? require('../proactive/useProactive.js').useProactive : null;
+src/screens/REPL.tsx:199:const useScheduledTasks = feature('AGENT_TRIGGERS') ? require('../hooks/useScheduledTasks.js').useScheduledTasks : null;
+src/screens/REPL.tsx:221:const AntModelSwitchCallout = "external" === 'ant' ? require('../components/AntModelSwitchCallout.js').AntModelSwitchCallout : null;
+src/screens/REPL.tsx:222:const shouldShowAntModelSwitch = "external" === 'ant' ? require('../components/AntModelSwitchCallout.js').shouldShowModelSwitchCallout : (): boolean => false;
+src/screens/REPL.tsx:223:const UndercoverAutoCallout = "external" === 'ant' ? require('../components/UndercoverAutoCallout.js').UndercoverAutoCallout : null;
+src/screens/REPL.tsx:272:const WebBrowserPanelModule = feature('WEB_BROWSER_TOOL') ? require('../tools/WebBrowserTool/WebBrowserPanel.js') as typeof import('../tools/WebBrowserTool/WebBrowserPanel.js') : null;
+src/screens/REPL.tsx:1745:        const coordinatorModule = require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js');
+src/screens/REPL.tsx:1755:          } = require('../tools/AgentTool/loadAgentsDir.js') as typeof import('../tools/AgentTool/loadAgentsDir.js');
+src/screens/REPL.tsx:1899:        } = require('../utils/sessionStorage.js');
+src/screens/REPL.tsx:1902:        } = require('../coordinator/coordinatorMode.js') as typeof import('../coordinator/coordinatorMode.js');
+src/screens/REPL.tsx:3686:      (require('../services/contextCollapse/index.js') as typeof import('../services/contextCollapse/index.js')).resetContextCollapse();
+src/components/Settings/Config.tsx:134:  const showDefaultViewPicker = feature('KAIROS') || feature('KAIROS_BRIEF') ? (require('../../tools/BriefTool/BriefTool.js') as typeof import('../../tools/BriefTool/BriefTool.js')).isBriefEntitled() : false;
+src/components/tasks/BackgroundTasksDialog.tsx:109:const WorkflowDetailDialog = feature('WORKFLOW_SCRIPTS') ? (require('./WorkflowDetailDialog.js') as typeof import('./WorkflowDetailDialog.js')).WorkflowDetailDialog : null;
+src/components/tasks/BackgroundTasksDialog.tsx:110:const workflowTaskModule = feature('WORKFLOW_SCRIPTS') ? require('src/tasks/LocalWorkflowTask/LocalWorkflowTask.js') as typeof import('src/tasks/LocalWorkflowTask/LocalWorkflowTask.js') : null;
+src/components/tasks/BackgroundTasksDialog.tsx:117:const monitorMcpModule = feature('MONITOR_TOOL') ? require('../../tasks/MonitorMcpTask/MonitorMcpTask.js') as typeof import('../../tasks/MonitorMcpTask/MonitorMcpTask.js') : null;
+src/components/tasks/BackgroundTasksDialog.tsx:119:const MonitorMcpDetailDialog = feature('MONITOR_TOOL') ? (require('./MonitorMcpDetailDialog.js') as typeof import('./MonitorMcpDetailDialog.js')).MonitorMcpDetailDialog : null;
+src/components/messages/SystemTextMessage.tsx:15:const teamMemSaved = feature('TEAMMEM') ? require('./teamMemSaved.js') as typeof import('./teamMemSaved.js') : null;
+src/components/messages/CollapsedReadSearchContent.tsx:23:const teamMemCollapsed = feature('TEAMMEM') ? require('./teamMemCollapsed.js') as typeof import('./teamMemCollapsed.js') : null;
+src/components/messages/UserTextMessage.tsx:97:        t1 = require("./UserGitHubWebhookMessage.js");
+src/components/messages/UserTextMessage.tsx:194:        t1 = require("./UserForkBoilerplateMessage.js");
+src/components/messages/UserTextMessage.tsx:218:        t1 = require("./UserCrossSessionMessage.js");
+src/components/messages/UserTextMessage.tsx:242:        t1 = require("./UserChannelMessage.js");
+src/components/memory/MemoryFileSelector.tsx:29:const teamMemPaths = feature('TEAMMEM') ? require('../../memdir/teamMemPaths.js') as typeof import('../../memdir/teamMemPaths.js') : null;
+src/components/WorktreeExitDialog.tsx:20:  (require('../utils/sessionStorage.js') as typeof import('../utils/sessionStorage.js')).saveWorktreeState(null);
+src/components/Spinner/index.ts:9:// Teammate components are NOT exported here - use dynamic require() to enable dead code elimination
+src/components/permissions/ExitPlanModePermissionRequest/ExitPlanModePermissionRequest.tsx:43:const autoModeStateModule = feature('TRANSCRIPT_CLASSIFIER') ? require('../../../utils/permissions/autoModeState.js') as typeof import('../../../utils/permissions/autoModeState.js') : null;
+src/components/permissions/PermissionRequest.tsx:36:const ReviewArtifactTool = feature('REVIEW_ARTIFACT') ? (require('../../tools/ReviewArtifactTool/ReviewArtifactTool.js') as typeof import('../../tools/ReviewArtifactTool/ReviewArtifactTool.js')).ReviewArtifactTool : null;
+src/components/permissions/PermissionRequest.tsx:37:const ReviewArtifactPermissionRequest = feature('REVIEW_ARTIFACT') ? (require('./ReviewArtifactPermissionRequest/ReviewArtifactPermissionRequest.js') as typeof import('./ReviewArtifactPermissionRequest/ReviewArtifactPermissionRequest.js')).ReviewArtifactPermissionRequest : null;
+src/components/permissions/PermissionRequest.tsx:38:const WorkflowTool = feature('WORKFLOW_SCRIPTS') ? (require('../../tools/WorkflowTool/WorkflowTool.js') as typeof import('../../tools/WorkflowTool/WorkflowTool.js')).WorkflowTool : null;
+src/components/permissions/PermissionRequest.tsx:39:const WorkflowPermissionRequest = feature('WORKFLOW_SCRIPTS') ? (require('../../tools/WorkflowTool/WorkflowPermissionRequest.js') as typeof import('../../tools/WorkflowTool/WorkflowPermissionRequest.js')).WorkflowPermissionRequest : null;
+src/components/permissions/PermissionRequest.tsx:40:const MonitorTool = feature('MONITOR_TOOL') ? (require('../../tools/MonitorTool/MonitorTool.js') as typeof import('../../tools/MonitorTool/MonitorTool.js')).MonitorTool : null;
+src/components/permissions/PermissionRequest.tsx:41:const MonitorPermissionRequest = feature('MONITOR_TOOL') ? (require('./MonitorPermissionRequest/MonitorPermissionRequest.js') as typeof import('./MonitorPermissionRequest/MonitorPermissionRequest.js')).MonitorPermissionRequest : null;
+src/components/ContextVisualization.tsx:32:        } = require("../services/contextCollapse/index.js") as typeof import('../services/contextCollapse/index.js');
+src/components/Message.tsx:252:          } = require("../services/compact/snipProjection.js") as typeof import('../services/compact/snipProjection.js');
+src/components/Message.tsx:255:          } = require("../services/compact/snipCompact.js") as typeof import('../services/compact/snipCompact.js');
+src/components/Message.tsx:259:              t2 = require("./messages/SnipBoundaryMessage.js");
+src/components/Messages.tsx:80:const proactiveModule = feature('PROACTIVE') || feature('KAIROS') ? require('../proactive/index.js') : null;
+src/components/Messages.tsx:81:const BRIEF_TOOL_NAME: string | null = feature('KAIROS') || feature('KAIROS_BRIEF') ? (require('../tools/BriefTool/prompt.js') as typeof import('../tools/BriefTool/prompt.js')).BRIEF_TOOL_NAME : null;
+src/components/Messages.tsx:82:const SEND_USER_FILE_TOOL_NAME: string | null = feature('KAIROS') ? (require('../tools/SendUserFileTool/prompt.js') as typeof import('../tools/SendUserFileTool/prompt.js')).SEND_USER_FILE_TOOL_NAME : null;
+src/components/TokenWarning.tsx:28:    t1 = require("../services/contextCollapse/index.js");
+src/components/TokenWarning.tsx:138:    } = require("../services/contextCollapse/index.js") as typeof import('../services/contextCollapse/index.js');
+src/components/PromptInput/PromptInputFooterLeftSide.tsx:6:const coordinatorModule = feature('COORDINATOR_MODE') ? require('../../coordinator/coordinatorMode.js') as typeof import('../../coordinator/coordinatorMode.js') : undefined;
+src/components/PromptInput/PromptInputFooterLeftSide.tsx:47:const proactiveModule = feature('PROACTIVE') || feature('KAIROS') ? require('../../proactive/index.js') : null;
+src/components/PromptInput/usePromptInputPlaceholder.ts:13:    ? require('../../proactive/index.js')
+src/components/PromptInput/Notifications.tsx:37:const VoiceIndicator: typeof import('./VoiceIndicator.js').VoiceIndicator = feature('VOICE_MODE') ? require('./VoiceIndicator.js').VoiceIndicator : () => null;
+src/components/LogoV2/ChannelsNotice.tsx:2:// Conditionally require()'d in LogoV2.tsx behind feature('KAIROS') ||
+src/components/LogoV2/LogoV2.tsx:36:const ChannelsNoticeModule = feature('KAIROS') || feature('KAIROS_CHANNELS') ? require('./ChannelsNotice.js') as typeof import('./ChannelsNotice.js') : null;
+src/hooks/useVoiceIntegration.tsx:23:} = feature('VOICE_MODE') ? require('./useVoice.js') : {
+src/hooks/useVoice.ts:526:  // native module — require('audio-capture.node') is a synchronous dlopen of
+src/hooks/useGlobalKeybindings.tsx:60:      require('../tasks/InProcessTeammateTask/InProcessTeammateTask.js') as typeof import('../tasks/InProcessTeammateTask/InProcessTeammateTask.js');
+src/hooks/useGlobalKeybindings.tsx:105:      } = require('../tools/BriefTool/BriefTool.js') as typeof import('../tools/BriefTool/BriefTool.js');
+src/hooks/useGlobalKeybindings.tsx:165:      } = require('../tools/BriefTool/BriefTool.js') as typeof import('../tools/BriefTool/BriefTool.js');
+src/hooks/useReplBridge.tsx:197:                } = require('../bridge/webhookSanitizer.js') as typeof import('../bridge/webhookSanitizer.js');
+src/tools.ts:18:    ? require('./tools/REPLTool/REPLTool.js').REPLTool
+src/tools.ts:22:    ? require('./tools/SuggestBackgroundPRTool/SuggestBackgroundPRTool.js')
+src/tools.ts:27:    ? require('./tools/SleepTool/SleepTool.js').SleepTool
+src/tools.ts:31:      require('./tools/ScheduleCronTool/CronCreateTool.js').CronCreateTool,
+src/tools.ts:32:      require('./tools/ScheduleCronTool/CronDeleteTool.js').CronDeleteTool,
+src/tools.ts:33:      require('./tools/ScheduleCronTool/CronListTool.js').CronListTool,
+src/tools.ts:37:  ? require('./tools/RemoteTriggerTool/RemoteTriggerTool.js').RemoteTriggerTool
+src/tools.ts:40:  ? require('./tools/MonitorTool/MonitorTool.js').MonitorTool
+src/tools.ts:43:  ? require('./tools/SendUserFileTool/SendUserFileTool.js').SendUserFileTool
+src/tools.ts:47:    ? require('./tools/PushNotificationTool/PushNotificationTool.js')
+src/tools.ts:51:  ? require('./tools/SubscribePRTool/SubscribePRTool.js').SubscribePRTool
+src/tools.ts:64:  require('./tools/TeamCreateTool/TeamCreateTool.js')
+src/tools.ts:67:  require('./tools/TeamDeleteTool/TeamDeleteTool.js')
+src/tools.ts:70:  require('./tools/SendMessageTool/SendMessageTool.js')
+src/tools.ts:93:    ? require('./tools/VerifyPlanExecutionTool/VerifyPlanExecutionTool.js')
+src/tools.ts:108:  ? require('./tools/OverflowTestTool/OverflowTestTool.js').OverflowTestTool
+src/tools.ts:111:  ? require('./tools/CtxInspectTool/CtxInspectTool.js').CtxInspectTool
+src/tools.ts:114:  ? require('./tools/TerminalCaptureTool/TerminalCaptureTool.js')
+src/tools.ts:118:  ? require('./tools/WebBrowserTool/WebBrowserTool.js').WebBrowserTool
+src/tools.ts:121:  ? (require('./coordinator/coordinatorMode.js') as typeof import('./coordinator/coordinatorMode.js'))
+src/tools.ts:124:  ? require('./tools/SnipTool/SnipTool.js').SnipTool
+src/tools.ts:127:  ? require('./tools/ListPeersTool/ListPeersTool.js').ListPeersTool
+src/tools.ts:131:      require('./tools/WorkflowTool/bundled/index.js').initBundledWorkflows()
+src/tools.ts:132:      return require('./tools/WorkflowTool/WorkflowTool.js').WorkflowTool
+src/tools.ts:153:    require('./tools/PowerShellTool/PowerShellTool.js') as typeof import('./tools/PowerShellTool/PowerShellTool.js')
+src/commands/compact/compact.ts:36:  ? (require('../../services/compact/reactiveCompact.js') as typeof import('../../services/compact/reactiveCompact.js'))
+src/commands/context/context.tsx:24:    } = require('../../services/contextCollapse/operations.js') as typeof import('../../services/contextCollapse/operations.js');
+src/commands/context/context-noninteractive.ts:53:      require('../../services/contextCollapse/operations.js') as typeof import('../../services/contextCollapse/operations.js')
+src/commands/context/context-noninteractive.ts:116:      require('../../services/contextCollapse/index.js') as typeof import('../../services/contextCollapse/index.js')
+src/commands/clear/conversation.ts:114:    const { setContextBlocked } = require('../../proactive/index.js')
+src/commands/clear/conversation.ts:232:    const { saveMode } = require('../../utils/sessionStorage.js')
+src/commands/clear/conversation.ts:235:    } = require('../../coordinator/coordinatorMode.js')
+src/commands/ultraplan.tsx:46:const _rawPrompt = require('../utils/ultraplan/prompt.txt');
+src/skills/bundled/index.ts:37:    const { registerDreamSkill } = require('./dream.js')
+src/skills/bundled/index.ts:43:    const { registerHunterSkill } = require('./hunter.js')
+src/skills/bundled/index.ts:49:    const { registerLoopSkill } = require('./loop.js')
+src/skills/bundled/index.ts:60:    } = require('./scheduleRemoteAgents.js')
+src/skills/bundled/index.ts:66:    const { registerClaudeApiSkill } = require('./claudeApi.js')
+src/skills/bundled/index.ts:75:    const { registerRunSkillGeneratorSkill } = require('./runSkillGenerator.js')
+src/query.ts:16:  ? (require('./services/compact/reactiveCompact.js') as typeof import('./services/compact/reactiveCompact.js'))
+src/query.ts:19:  ? (require('./services/contextCollapse/index.js') as typeof import('./services/contextCollapse/index.js'))
+src/query.ts:67:  ? (require('./services/skillSearch/prefetch.js') as typeof import('./services/skillSearch/prefetch.js'))
+src/query.ts:70:  ? (require('./jobs/classifier.js') as typeof import('./jobs/classifier.js'))
+src/query.ts:116:  ? (require('./services/compact/snipCompact.js') as typeof import('./services/compact/snipCompact.js'))
+src/query.ts:119:  ? (require('./utils/taskSummary.js') as typeof import('./utils/taskSummary.js'))
+src/query/stopHooks.ts:43:  ? (require('../services/extractMemories/extractMemories.js') as typeof import('../services/extractMemories/extractMemories.js'))
+src/query/stopHooks.ts:46:  ? (require('../jobs/classifier.js') as typeof import('../jobs/classifier.js'))
+src/query/stopHooks.ts:106:  // require()-gated jobs/ import pattern above; spawn.test.ts asserts the
+src/tasks.ts:10:  ? require('./tasks/LocalWorkflowTask/LocalWorkflowTask.js').LocalWorkflowTask
+src/tasks.ts:13:  ? require('./tasks/MonitorMcpTask/MonitorMcpTask.js').MonitorMcpTask
+src/native-ts/color-diff/index.ts:38:  const mod = require('highlight.js')
+src/services/compact/prompt.ts:8:    ? (require('../../proactive/index.js') as typeof import('../../proactive/index.js'))
+src/services/compact/postCompactCleanup.ts:46:        require('../contextCollapse/index.js') as typeof import('../contextCollapse/index.js')
+src/services/compact/autoCompact.ts:212:  // CLAUDE_CONTEXT_COLLAPSE env override is honored here too. require()
+src/services/compact/autoCompact.ts:218:      require('../contextCollapse/index.js') as typeof import('../contextCollapse/index.js')
+src/services/compact/compact.ts:7:  ? (require('../sessionTranscript/sessionTranscript.js') as typeof import('../sessionTranscript/sessionTranscript.js'))
+src/services/extractMemories/extractMemories.ts:66:  ? (require('../../memdir/teamMemPaths.js') as typeof import('../../memdir/teamMemPaths.js'))
+src/services/lsp/LSPServerInstance.ts:110:  const { createLSPClient } = require('./LSPClient.js') as {
+src/services/mcp/useManageMCPConnections.ts:24:      require('../../skills/mcpSkills.js') as typeof import('../../skills/mcpSkills.js')
+src/services/mcp/useManageMCPConnections.ts:29:      require('../skillSearch/localSearch.js') as typeof import('../skillSearch/localSearch.js')
+src/services/mcp/client.ts:119:      require('../../skills/mcpSkills.js') as typeof import('../../skills/mcpSkills.js')
+src/services/mcp/client.ts:237:    require('../../utils/claudeInChrome/toolRendering.js')
+src/services/mcp/client.ts:243:      require('../../utils/computerUse/wrapper.js')
+src/services/mcp/client.ts:247:      require('../../utils/computerUse/common.js') as typeof import('../../utils/computerUse/common.js')
+src/services/mcp/config.ts:1514:      require('../../utils/computerUse/common.js') as typeof import('../../utils/computerUse/common.js')
+src/services/voice.ts:28:    // vendor/audio-capture-src/index.ts defers require(...node) until the
+src/services/api/claude.ts:106:  ? (require('../../utils/permissions/autoModeState.js') as typeof import('../../utils/permissions/autoModeState.js'))
+src/services/teamMemorySync/teamMemSecretGuard.ts:22:      require('../../memdir/teamMemPaths.js') as typeof import('../../memdir/teamMemPaths.js')
+src/services/teamMemorySync/teamMemSecretGuard.ts:24:      require('./secretScanner.js') as typeof import('./secretScanner.js')
+src/services/analytics/metadata.ts:133:          require('../../utils/computerUse/common.js') as typeof import('../../utils/computerUse/common.js')
+vendor/modifiers-napi-src/index.ts:26:      cachedModule = require(process.env.MODIFIERS_NODE_PATH) as ModifiersNapi
+vendor/url-handler-src/index.ts:25:      cachedModule = require(process.env.URL_HANDLER_NODE_PATH) as UrlHandlerNapi
+vendor/audio-capture-src/index.ts:40:  // direct require(env var) — bun cannot analyze require(variable) from a loop.
+vendor/audio-capture-src/index.ts:44:      cachedModule = require(
+vendor/audio-capture-src/index.ts:54:  // fine here — in bundled output (node --target build) require() resolves at
+vendor/audio-capture-src/index.ts:65:      cachedModule = require(p) as AudioCaptureNapi
+vendor/image-processor-src/index.ts:35:    cachedModule = require('../../image-processor.node')
