@@ -33,6 +33,7 @@ The AI coding assistant space is evolving at breakneck speed. New tools launch e
   - [Void](#7-void)
   - [Goose (by Block)](#8-goose-by-block)
   - [Cursor Open Source Alternatives](#9-cursor-open-source-alternatives)
+  - [Claude Code (by Anthropic)](#10-claude-code-by-anthropic)
 - [Comparison Table](#comparison-table)
 - [How to Choose the Right Tool](#how-to-choose-the-right-tool)
 - [The Rise of Agentic Coding](#the-rise-of-agentic-coding)
@@ -243,6 +244,27 @@ Beyond the tools listed above, there's a growing ecosystem of open-source projec
 
 ---
 
+### 10. Claude Code (by Anthropic)
+
+**GitHub:** [anthropics/claude-code](https://github.com/anthropics/claude-code)
+
+Claude Code is Anthropic's official agentic coding tool that runs directly in the terminal. It is a command-line interface that let developers use Claude models for complex coding tasks without leaving their terminal.
+
+**What makes Claude Code special:**
+
+- **Deep agentic capabilities.** Claude Code can read and edit files, run shell commands, search codebases, manage git workflows, and create pull requests - all autonomously with user approval.
+- **Extended thinking.** Leverages Claude's extended thinking capabilities for complex reasoning about architecture, debugging, and multi-step refactoring tasks.
+- **MCP support.** First-class support for Model Context Protocol, allowing connection to databases, APIs, and external services through standardized tools.
+- **IDE integrations.** Works as a standalone CLI but also integrate with VS Code and JetBrains IDEs as an extension, giving flexibility to use it however you prefer.
+- **Sub-agent architecture.** Can spawn sub-agents for parallel task execution, making it efficient for large-scale codebase work.
+- **Memory system.** Maintains project-level memory through CLAUDE.md files, learning your preferences and codebase conventions across sessions.
+
+**Best for:** Developers who want a powerful terminal-based AI agent backed by Claude's strong reasoning capabilities, with the flexibility to use it in IDE or CLI.
+
+**License:** ISC (with some restrictions on competing products)
+
+---
+
 ## Comparison Table
 
 | Tool | Type | Interface | Self-Hosted | MCP Support | Local Models | License |
@@ -255,6 +277,7 @@ Beyond the tools listed above, there's a growing ecosystem of open-source projec
 | **Tabby** | Completion | VS Code / JetBrains / Vim | Yes | No | Yes | Apache 2.0 |
 | **Void** | Editor | Standalone (VS Code fork) | Yes | No | Yes | Apache 2.0 |
 | **Goose** | Agent | Terminal (CLI) | N/A | Yes | Yes | Apache 2.0 |
+| **Claude Code** | Agent | Terminal (CLI) + IDE | N/A | Yes | No | ISC |
 
 ---
 
@@ -319,7 +342,7 @@ One of the biggest advantages of open-source AI coding tools is the ability to s
 ### Use Cloud When:
 - **Getting started quickly.** Cloud-hosted options let you start immediately without any infrastructure setup.
 - **Small team.** For small teams, the operational overhead of self-hosting may not be worth it.
-- **Frontier models.** If you need access to the latest and most powerful models (GPT-4, Claude 3.5 Opus, Gemini Ultra), cloud APIs are the only option for now.
+- **Frontier models.** If you need access to the latest and most powerful models (GPT-4o, Claude Opus 4, Gemini 2.5 Pro), cloud APIs are the only option for now.
 - **Burst usage.** If your usage is sporadic, pay-per-use cloud pricing may be more economical than maintaining dedicated infrastructure.
 
 ### Recommended Self-Hosting Stack:
