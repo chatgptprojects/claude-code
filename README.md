@@ -261,7 +261,7 @@ Beyond the tools listed above, there's a growing ecosystem of open-source projec
 | **OpenCode** | Assistant | Terminal (TUI) | ![](https://img.shields.io/github/stars/opencode-ai/opencode?style=flat&label=) | Yes | Yes | Yes | Go | MIT |
 | **OpenHands** | Platform | Web UI + CLI | ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&label=) | Yes | Yes | Yes | Python | MIT |
 | **Aider** | Assistant | Terminal (CLI) | ![](https://img.shields.io/github/stars/paul-gauthier/aider?style=flat&label=) | N/A | No | Yes | Python | Apache 2.0 |
-| **Continue** | Assistant | VS Code / JetBrains | ![](https://img.shields.io/github/stars/continuedev/continue?style=flat&label=) | Yes | No | Yes | TypeScript | Apache 2.0 |
+| **Continue** | Assistant | VS Code / JetBrains | ![](https://img.shields.io/github/stars/continuedev/continue?style=flat&label=) | Yes | Yes | Yes | TypeScript | Apache 2.0 |
 | **Tabby** | Completion | VS Code / JetBrains / Vim | ![](https://img.shields.io/github/stars/TabbyML/tabby?style=flat&label=) | Yes | No | Yes | Rust | Apache 2.0 |
 | **Void** | Editor | Standalone (VS Code fork) | ![](https://img.shields.io/github/stars/voideditor/void?style=flat&label=) | Yes | No | Yes | TypeScript | Apache 2.0 |
 | **Goose** | Agent | Terminal (CLI) | ![](https://img.shields.io/github/stars/block/goose?style=flat&label=) | N/A | Yes | Yes | Rust | Apache 2.0 |
